@@ -1,71 +1,92 @@
-# Direct Preference Optimization (DPO)
+# DPO Style Alignment Experiment (Archaic English)
 
 ## Purpose
 
-This project explores how **Direct Preference Optimization (DPO)** can be used to modify the behavior of a language model through preference learning.
+This project explores how **Direct Preference Optimization (DPO)** can be used to teach a language model a consistent writing style while preserving correct and useful answers.
 
-Modern LLMs are already capable of producing different styles of responses when given instructions. However, prompting alone does not always guarantee consistent behavior, especially when multiple goals conflict (for example: being creative while remaining factual, or following a style while preserving quality).
+Instead of relying on prompting alone, the model is trained using preference data to learn which type of response is preferred.
 
-Instead of explicitly instructing the model every time, preference optimization learns these behaviors from comparisons between preferred and rejected outputs.
+In this project, the goal is to align the model toward a **Shakespearean / Early Modern English style** while keeping the underlying information accurate.
 
-## Experiment
+---
 
-The project compares:
+I trained a language model using preference pairs:
 
-- **Base model**
-  - Original model without alignment
+- **Chosen response** → written in archaic (Shakespeare-like) English
+- **Rejected response** → written in normal modern English
 
-- **Instruction-only model**
-  - Model prompted to follow the target style
-
-- **DPO-aligned model**
-  - Model trained using preference pairs
-
-## Why DPO?
-
-A simple instruction such as:
-
-> "Speak like a pirate"
-
-can work for individual conversations, but it does not teach the model a persistent preference. DPO provides a way to encode preferences by showing the model examples of better and worse outputs.
+Both responses contain the same meaning. The only difference is style.
 
 Example:
 
 **Prompt:**
 
 ```
-Explain how a computer works.
+Explain how a neural network learns.
 ```
 
-**Preferred response:**
+**Chosen:**
 
 ```
-Arrr, a computer be a machine that follows commands...
+Verily, a neural network doth learn by adjusting the weights between its connections, such that its predictions grow nearer unto truth with each example it doth observe.
 ```
 
-**Rejected response:**
+**Rejected:**
 
 ```
-Computers are just magic boxes that think like humans.
+A neural network learns by adjusting its weights using backpropagation and gradient descent.
 ```
 
-The model learns which type of answer should be preferred.
+---
+
+## Why DPO instead of prompting
+
+A system prompt like:
+
+> "Answer in Shakespearean style"
+
+can work in simple cases, but it is not always consistent.
+
+DPO is used to:
+
+- make the style more stable
+- reduce reliance on prompting
+- teach the model a persistent preference
+- preserve factual correctness while changing expression
+
+---
 
 ## Dataset
 
-The preference dataset consists of:
-
-- User prompts
-- Chosen responses
-- Rejected responses
-
-Each example represents a preference:
+The dataset contains preference pairs:
 
 ```
 (prompt, chosen, rejected)
 ```
 
-The chosen response demonstrates the desired behavior, while the rejected response represents a less preferred alternative.
+- Prompt: a question or instruction
+- Chosen: archaic English answer
+- Rejected: normal English answer
+
+The data covers different topics:
+
+- science explanations
+- programming concepts
+- history
+- AI and machine learning
+- everyday reasoning
+
+---
+
+## Goal of the experiment
+
+The main questions are:
+
+- Can DPO reliably teach a consistent writing style?
+- Does the model keep factual correctness while changing style?
+- How well does style preference generalize to unseen prompts?
+
+---
 
 ## Documentation
 

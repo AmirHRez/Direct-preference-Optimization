@@ -1,0 +1,8 @@
+openai
+tqdm
+trl
+transformers
+datasets
+accelerate
+peft
+bitsandbytes
