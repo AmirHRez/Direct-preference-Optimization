@@ -1,32 +1,9 @@
-"""
-eme_dpo_pipeline.py
-====================
-SFT → DPO pipeline to align a causal LM toward Early Modern English responses.
-
-Phases
-------
-1. SFT  – teach the model to follow the instruction format and produce EME output
-2. DPO  – push it further toward EME (chosen) and away from modern English (rejected)
-
-Requirements
-------------
-    pip install "transformers==4.40.0" "trl==0.12.2" datasets torch accelerate
-
-Quick start
------------
-    python eme_dpo_pipeline.py                       # runs on built-in sample data
-    python eme_dpo_pipeline.py --data_path data.json # your own JSON file
-"""
-
 from __future__ import annotations
-
-import argparse
 import json
 import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
-
 import torch
 from datasets import Dataset
 from transformers import (
@@ -38,6 +15,7 @@ from transformers import (
 )
 from trl import DPOConfig, DPOTrainer, SFTConfig, SFTTrainer
 from trl import DataCollatorForCompletionOnlyLM
+from config import *
 
 logging.basicConfig(
     level=logging.INFO,
@@ -46,128 +24,20 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Config
-# ─────────────────────────────────────────────────────────────────────────────
 
-@dataclass
-class PipelineConfig:
-    # Model — SmolLM2-Instruct instead of GPT-2:
-    #   GPT-2 is not instruction-tuned so it rambles, repeats the prompt
-    #   template, and never stops cleanly. SmolLM2-Instruct already knows
-    #   how to follow a prompt and stop; SFT+DPO only needs to teach it style.
-    model_name: str = "HuggingFaceTB/SmolLM2-135M-Instruct"
-
-    # Output paths
-    sft_output_dir: str = "./checkpoints/sft"
-    dpo_output_dir: str = "./checkpoints/dpo"
-
-    # Common
-    max_seq_length: int = 256
-    seed: int = 42
-
-    # SFT hyperparams
-    sft_epochs: int = 3
-    sft_batch_size: int = 2
-    sft_lr: float = 2e-5
-    sft_warmup_ratio: float = 0.1
-    sft_grad_accum: int = 4
-
-    # DPO hyperparams
-    dpo_epochs: int = 3
-    dpo_batch_size: int = 1
-    dpo_lr: float = 5e-6
-    dpo_beta: float = 0.1
-    dpo_grad_accum: int = 4
-
-    # Data
-    data_path: Optional[str] = None
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Built-in sample data
-# ─────────────────────────────────────────────────────────────────────────────
-
-SAMPLE_DATA: list[dict] = [
-    {
-        "prompt": "How do you ask a librarian or store clerk for help without interrupting them?",
-        "chosen": (
-            "To seek aid from a keeper of books or a shopman without breaking his labour, "
-            "wait until he hath finished his present task, then say, 'Pardon me—when thou "
-            "hath a moment, couldst thou assist me?'"
-        ),
-        "rejected": (
-            "Wait for them to finish their current task, then say "
-            "'Excuse me, when you have a moment, could you help me?'"
-        ),
-    },
-    {
-        "prompt": "What is the best way to apologise after a mistake?",
-        "chosen": (
-            "When thou hast erred, approach the offended party with humility and say, "
-            "'I do most humbly beseech thy pardon for mine offence; it was ill done of me "
-            "and shall not be repeated.'"
-        ),
-        "rejected": (
-            "The best way to apologise is to acknowledge your mistake directly and sincerely, "
-            "say you're sorry, and explain what you'll do differently in the future."
-        ),
-    },
-    {
-        "prompt": "How do you decline an invitation politely?",
-        "chosen": (
-            "Should thy presence be required elsewhere, thou mayst decline with grace: "
-            "'I thank thee most heartily for thine invitation, yet I am, by prior engagement, "
-            "unable to attend. I trust thou wilt forgive mine absence.'"
-        ),
-        "rejected": (
-            "To politely decline an invitation, thank the person for inviting you, "
-            "briefly explain that you're unable to attend, and express that you hope "
-            "to see them another time."
-        ),
-    },
-    {
-        "prompt": "How should you greet someone you have not seen in a long time?",
-        "chosen": (
-            "Upon meeting one long absent from thy company, thou mightest say with warmth: "
-            "'Well met, good friend! It doth gladden my heart exceedingly to look upon "
-            "thy countenance once more after so long a parting.'"
-        ),
-        "rejected": (
-            "When you see someone you haven't met in a long time, greet them warmly "
-            "and tell them it's great to see them again."
-        ),
-    },
-]
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# Data helpers
-# ─────────────────────────────────────────────────────────────────────────────
-
-def load_data(data_path: Optional[str]) -> list[dict]:
-    if data_path and Path(data_path).exists():
+def load_data(data_path: str) -> list[dict]:
+    try:
         with open(data_path, encoding="utf-8") as f:
             data = json.load(f)
         log.info("Loaded %d examples from %s", len(data), data_path)
-        return data
-    log.info("Using built-in sample data (%d examples).", len(SAMPLE_DATA))
-    return SAMPLE_DATA
+        return data 
+    except Exception:
+        log.error("No data file was found")
+    
 
-
-# SmolLM2 uses ChatML format:
-#   <|im_start|>user\n{prompt}<|im_end|>\n<|im_start|>assistant\n{response}<|im_end|>
-# DataCollatorForCompletionOnlyLM searches for this token sequence to find
-# where the response begins, masking everything before it from the loss.
 RESPONSE_TEMPLATE = "<|im_start|>assistant\n"
 
-
 def make_sft_dataset(data: list[dict], tokenizer: AutoTokenizer) -> Dataset:
-    """
-    Format examples using the model's own chat template so the token boundaries
-    exactly match what the model expects at inference time.
-    The collator uses RESPONSE_TEMPLATE to mask prompt tokens from the loss.
-    """
     texts = []
     for ex in data:
         messages = [
@@ -188,10 +58,6 @@ def make_dpo_dataset(data: list[dict]) -> Dataset:
     })
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Model / tokenizer
-# ─────────────────────────────────────────────────────────────────────────────
-
 def load_model_and_tokenizer(model_name_or_path: str):
     tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
 
@@ -200,8 +66,6 @@ def load_model_and_tokenizer(model_name_or_path: str):
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
     use_cuda = torch.cuda.is_available()
-    # bfloat16: same exponent range as float32, so loss values stay
-    # representable and don't collapse to 0.0 the way float16 does.
     dtype = torch.bfloat16 if use_cuda else torch.float32
 
     model = AutoModelForCausalLM.from_pretrained(
@@ -213,16 +77,11 @@ def load_model_and_tokenizer(model_name_or_path: str):
     return model, tokenizer
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Phase 1 — SFT
-# ─────────────────────────────────────────────────────────────────────────────
 
-def run_sft(cfg: PipelineConfig, data: list[dict]) -> str:
-    log.info("━" * 60)
-    log.info("Phase 1 — Supervised Fine-Tuning (SFT)")
-    log.info("━" * 60)
+def run_sft(data: list[dict]) -> str:
+    log.info("Phase 1: Supervised Fine-Tuning (SFT)")
 
-    model, tokenizer = load_model_and_tokenizer(cfg.model_name)
+    model, tokenizer = load_model_and_tokenizer(MODEL_NAME)
     dataset = make_sft_dataset(data, tokenizer)
 
     collator = DataCollatorForCompletionOnlyLM(
@@ -233,19 +92,19 @@ def run_sft(cfg: PipelineConfig, data: list[dict]) -> str:
     use_cuda = torch.cuda.is_available()
 
     sft_cfg = SFTConfig(
-        output_dir=cfg.sft_output_dir,
-        num_train_epochs=cfg.sft_epochs,
-        per_device_train_batch_size=cfg.sft_batch_size,
-        gradient_accumulation_steps=cfg.sft_grad_accum,
-        learning_rate=cfg.sft_lr,
-        warmup_ratio=cfg.sft_warmup_ratio,
-        max_seq_length=cfg.max_seq_length,
+        output_dir=SFT_OUTPUT_DIR,
+        num_train_epochs=SFT_EPOCHS,
+        per_device_train_batch_size=SFT_BATCH_SIZE,
+        gradient_accumulation_steps=SFT_GRAD_ACCUM,
+        learning_rate=SFT_LR,
+        warmup_ratio=SFT_WARMUP_RATIO,
+        max_seq_length=MAX_SEQ_LEN,
         dataset_text_field="text",
         bf16=use_cuda,
         fp16=False,
         logging_steps=5,
         save_strategy="epoch",
-        seed=cfg.seed,
+        seed=SEED,
         report_to="none",
     )
 
@@ -259,20 +118,14 @@ def run_sft(cfg: PipelineConfig, data: list[dict]) -> str:
     )
 
     trainer.train()
-    trainer.save_model(cfg.sft_output_dir)
-    tokenizer.save_pretrained(cfg.sft_output_dir)
-    log.info("SFT checkpoint saved → %s", cfg.sft_output_dir)
-    return cfg.sft_output_dir
+    trainer.save_model(SFT_OUTPUT_DIR)
+    tokenizer.save_pretrained(SFT_OUTPUT_DIR)
+    log.info("SFT checkpoint saved to %s", SFT_OUTPUT_DIR)
+    return SFT_OUTPUT_DIR
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Phase 2 — DPO
-# ─────────────────────────────────────────────────────────────────────────────
-
-def run_dpo(cfg: PipelineConfig, sft_model_path: str, data: list[dict]) -> str:
-    log.info("━" * 60)
+def run_dpo(sft_model_path: str, data: list[dict]) -> str:
     log.info("Phase 2 — Direct Preference Optimisation (DPO)")
-    log.info("━" * 60)
 
     model, tokenizer = load_model_and_tokenizer(sft_model_path)
     dataset = make_dpo_dataset(data)
@@ -280,19 +133,19 @@ def run_dpo(cfg: PipelineConfig, sft_model_path: str, data: list[dict]) -> str:
     use_cuda = torch.cuda.is_available()
 
     dpo_cfg = DPOConfig(
-        output_dir=cfg.dpo_output_dir,
-        num_train_epochs=cfg.dpo_epochs,
-        per_device_train_batch_size=cfg.dpo_batch_size,
-        gradient_accumulation_steps=cfg.dpo_grad_accum,
-        learning_rate=cfg.dpo_lr,
-        beta=cfg.dpo_beta,
-        max_length=cfg.max_seq_length,
-        max_prompt_length=cfg.max_seq_length // 2,
+        output_dir=DPO_OUTPUT_DIR,
+        num_train_epochs=DPO_EPOCHS,
+        per_device_train_batch_size=DPO_BATCH_SIZE,
+        gradient_accumulation_steps=DPO_GRAD_ACCUM,
+        learning_rate=DPO_LR,
+        beta=DPO_BETA,
+        max_length=MAX_SEQ_LEN,
+        max_prompt_length=MAX_SEQ_LEN // 2,
         bf16=use_cuda,
         fp16=False,
         logging_steps=5,
         save_strategy="epoch",
-        seed=cfg.seed,
+        seed=SEED,
         report_to="none",
     )
 
@@ -305,28 +158,19 @@ def run_dpo(cfg: PipelineConfig, sft_model_path: str, data: list[dict]) -> str:
     )
 
     trainer.train()
-    trainer.save_model(cfg.dpo_output_dir)
-    tokenizer.save_pretrained(cfg.dpo_output_dir)
-    log.info("DPO checkpoint saved → %s", cfg.dpo_output_dir)
-    return cfg.dpo_output_dir
+    trainer.save_model(DPO_OUTPUT_DIR)
+    tokenizer.save_pretrained(DPO_OUTPUT_DIR)
+    log.info("DPO checkpoint saved to %s", DPO_OUTPUT_DIR)
+    return DPO_OUTPUT_DIR
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Inference helpers
-# ─────────────────────────────────────────────────────────────────────────────
 
 class SafeLogitsProcessor(LogitsProcessor):
-    """Replaces nan/inf logits before softmax to prevent torch.multinomial crash."""
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor) -> torch.FloatTensor:
         return torch.nan_to_num(scores, nan=0.0, posinf=1e4, neginf=-1e4)
 
 
 class StopOnTemplate(StoppingCriteria):
-    """
-    Halts generation when the model starts emitting a new <|im_start|>user turn.
-    Without this the model continues past the end of its response and begins
-    generating a follow-up question, repeating the prompt template mid-output.
-    """
     def __init__(self, tokenizer: AutoTokenizer):
         self.stop_ids = tokenizer.encode("<|im_start|>user", add_special_tokens=False)
 
@@ -341,11 +185,8 @@ def generate_response(
     temperature: float = 0.8,
     top_p: float = 0.95,
 ) -> str:
-    """Generate an EME-style response from the fine-tuned model."""
     model, tokenizer = load_model_and_tokenizer(model_path)
 
-    # float32 for inference — bf16 logits can overflow to inf causing
-    # softmax to produce nan and crashing torch.multinomial.
     model = model.to(torch.float32)
     model.eval()
 
@@ -374,27 +215,24 @@ def generate_response(
 
 
 
-def main() -> None:
-    cfg = PipelineConfig()
+def main():
 
-    log.info("Model  : %s", cfg.model_name)
+    log.info("Model  : %s", MODEL_NAME)
     log.info("Device : %s", "cuda" if torch.cuda.is_available() else "cpu")
 
-    data = load_data(cfg.data_path)
+    data = load_data(DATA_DIR)
 
     
-    sft_path = run_sft(cfg, data)
+    sft_path = run_sft(data)
 
-    dpo_path = run_dpo(cfg, sft_path, data)
+    dpo_path = run_dpo(sft_path, data)
 
     test_prompts = [
         "How should one properly thank a host after a dinner?",
         "What is the best way to introduce yourself to a stranger?",
     ]
 
-    print("\n" + "═" * 60)
-    print("  INFERENCE  —  DPO model")
-    print("═" * 60)
+    print("INFERENCE:  DPO model")
     for prompt in test_prompts:
         response = generate_response(dpo_path, prompt)
         print(f"\nQ: {prompt}")

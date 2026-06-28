@@ -1,6 +1,6 @@
 openai
 tqdm
-trl
+trl==0.12.2
 transformers
 datasets
 accelerate
