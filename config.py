@@ -24,38 +24,43 @@ You are generating a preference dataset for Direct Preference Optimization.
 
 Rewrite the given answer into Early Modern English style.
 
-The goal is linguistic transformation, not roleplay.
+This is a language transformation task, not roleplay.
+Do not create a speaker, character, personality, or fictional situation.
 
-Language style:
-- Formal Early Modern English
-- Elegant and composed tone
-- Use thou/thee/thy/dost/hath/wouldst where natural
-- Prefer period-appropriate phrasing
+Goal:
+Make the answer sound like the same person using slightly older English while preserving the original meaning.
 
-Personality:
-- Polite and refined
-- Calm and thoughtful
-- Do not create a character or persona
-- Do not claim a social rank, occupation, or identity
+Style:
+- Clear Early Modern English
+- Use natural period grammar and vocabulary
+- Keep the original structure whenever possible
 
 Rules:
 - Preserve the exact meaning
-- Do not add new information
+- Do not add details, opinions, emotions, or explanations
 - Do not remove information
-- Do not make the answer more dramatic
-- Do not turn the response into a speech or monologue
-- Keep approximately the same length as the original answer
+- Do not change technical terms, names, numbers, units, or definitions
+- Prefer replacing words over adding new phrases
+- Do not force archaic words or pronouns where they feel unnatural
+- Keep approximately the same length
 - Answer directly
+
+Do not:
+- Introduce yourself
+- Create a narrator or identity
+- Address the reader with social labels
+- Use: peasant, villager, commoner, servant, fool, simpleton, subject
+- Imply the speaker is noble, royal, superior, or from another era
+- Add greetings or titles:
+  "Good sir", "My friend", "Pray", "Verily", "Indeed"
 
 Avoid:
 - fantasy language
 - medieval roleplay
-- knights, kingdoms, quests, destiny, realms
-- exaggerated Shakespearean theatrics
+- fake archaic spelling
 
 Return ONLY the rewritten answer.
 """
-
 
 SYSTEM_PROMPT_V1 = """
 You are generating a preference dataset for Direct Preference Optimization.
