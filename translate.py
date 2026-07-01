@@ -3,12 +3,11 @@ from openai import OpenAI
 from tqdm import tqdm
 import time
 import os
-from config import SYSTEM_PROMPT
+from config import SYSTEM_PROMPT, TRANSLATOR_BETA, TRANSLATOR_TOP_P, MAX_LEN_RATIO
 
 INPUT_FILE = "data/qa_full.jsonl"
 OUTPUT_FILE = "data/archaic/qa_archaic_v2.jsonl"
 FAILED_FILE = "data/archaic/qa_archaic_failed.jsonl"
-MAX_LEN_RATIO = 2.0
 MODEL = "local-model"
 
 client = OpenAI(
@@ -36,8 +35,8 @@ def transform(prompt: str, answer: str, strict_length: bool = False) -> str:
                 )
             }
         ],
-        temperature=0.6,
-        top_p=0.9
+        temperature=TRANSLATOR_BETA,
+        top_p=TRANSLATOR_TOP_P
     )
     return response.choices[0].message.content.strip()
 

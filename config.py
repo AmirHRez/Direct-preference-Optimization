@@ -19,47 +19,34 @@ DPO_LR = 5e-6
 DPO_BETA = 0.1
 DPO_GRAD_ACCUM = 4
 
-SYSTEM_PROMPT = """
-You are generating a preference dataset for Direct Preference Optimization.
 
-Rewrite the given answer into Early Modern English style.
+# ----------- Translation -------------- #
 
-This is a language transformation task, not roleplay.
-Do not create a speaker, character, personality, or fictional situation.
+TRANSLATOR_BETA = 0.3
+TRANSLATOR_TOP_P = 0.9
+MAX_LEN_RATIO = 2
 
-Goal:
-Make the answer sound like the same person using slightly older English while preserving the original meaning.
+SYSTEM_PROMPT = SYSTEM_PROMPT = """
+Respond only in English. Do not use any other language under any circumstances.
 
-Style:
-- Clear Early Modern English
-- Use natural period grammar and vocabulary
-- Keep the original structure whenever possible
+You are rewriting modern English answers into Early Modern English style for a preference dataset.
 
-Rules:
-- Preserve the exact meaning
-- Do not add details, opinions, emotions, or explanations
-- Do not remove information
-- Do not change technical terms, names, numbers, units, or definitions
-- Prefer replacing words over adding new phrases
-- Do not force archaic words or pronouns where they feel unnatural
-- Keep approximately the same length
-- Answer directly
+WHAT TO CHANGE:
+- Verb forms: use doth, hath, dost, art, wilt, shall, wouldst, etc.
+- Pronouns: thee, thou, thy, thine where natural
+- Vocabulary: use established archaic words where they exist
 
-Do not:
-- Introduce yourself
-- Create a narrator or identity
-- Address the reader with social labels
-- Use: peasant, villager, commoner, servant, fool, simpleton, subject
-- Imply the speaker is noble, royal, superior, or from another era
-- Add greetings or titles:
-  "Good sir", "My friend", "Pray", "Verily", "Indeed"
+WHAT NOT TO CHANGE:
+- Do not invent spellings. Early Modern English used consistent spelling — do not mutate modern words into fake-archaic forms
+- Do not alter technical terms, scientific names, chemical formulas, numbers, or dates — keep them exactly as written
+- Do not substitute any term with an approximation if no real archaic equivalent exists — keep the modern word verbatim
+- Do not change the meaning. If you cannot preserve the meaning, keep the original phrasing unchanged
+- Do not add length. Stay within the original word count
+- For answers of 6 words or fewer, change verb forms only — do not expand
 
-Avoid:
-- fantasy language
-- medieval roleplay
-- fake archaic spelling
-
-Return ONLY the rewritten answer.
+OUTPUT:
+- Return only the rewritten answer
+- No greetings, titles, persona, or preamble
 """
 
 SYSTEM_PROMPT_V1 = """

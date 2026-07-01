@@ -1,0 +1,601 @@
+{"prompt": "What is the SI unit of force?", "answer": "The SI unit of force is the newton, defined as the force required to accelerate a one-kilogram mass by one meter per second squared.", "genre": "Science"}
+{"prompt": "What does the law of conservation of energy state?", "answer": "It states that energy cannot be created or destroyed, only transformed from one form to another.", "genre": "Science"}
+{"prompt": "What is the difference between speed and velocity?", "answer": "Speed is a scalar quantity measuring how fast an object moves, while velocity is a vector that includes both speed and direction.", "genre": "Science"}
+{"prompt": "What is the second law of thermodynamics often stated as?", "answer": "It states that the total entropy of an isolated system always increases over time.", "genre": "Science"}
+{"prompt": "Which fundamental particle carries a positive electric charge in an atom?", "answer": "The proton carries a positive electric charge and is found in the nucleus of an atom.", "genre": "Science"}
+{"prompt": "What phenomenon explains the bending of light when it passes from air into water?", "answer": "Refraction is the bending of light as it changes speed when passing from one medium to another.", "genre": "Science"}
+{"prompt": "What relationship is described by Newton's second law of motion?", "answer": "It states that acceleration is directly proportional to net force and inversely proportional to mass.", "genre": "Science"}
+{"prompt": "What type of wave is sound?", "answer": "Sound is a mechanical longitudinal wave that requires a medium to travel through.", "genre": "Science"}
+{"prompt": "What is the principle behind an electric generator?", "answer": "It converts mechanical energy into electrical energy using electromagnetic induction.", "genre": "Science"}
+{"prompt": "What is the approximate value of acceleration due to gravity on Earth's surface?", "answer": "It is approximately 9.8 meters per second squared.", "genre": "Science"}
+{"prompt": "What is the chemical formula for water?", "answer": "H2O, consisting of two hydrogen atoms and one oxygen atom.", "genre": "Science"}
+{"prompt": "What is the pH value of a neutral substance at 25\u00b0C?", "answer": "It is 7.", "genre": "Science"}
+{"prompt": "Which element has the atomic number 6?", "answer": "Carbon has the atomic number 6.", "genre": "Science"}
+{"prompt": "What is the main component of the Earth's atmosphere?", "answer": "Nitrogen makes up about 78% of the Earth's atmosphere.", "genre": "Science"}
+{"prompt": "What type of bond involves the sharing of electron pairs between atoms?", "answer": "A covalent bond involves the sharing of electron pairs.", "genre": "Science"}
+{"prompt": "What process do plants use to convert carbon dioxide and water into glucose and oxygen?", "answer": "Photosynthesis is the process that uses sunlight to convert carbon dioxide and water into glucose and oxygen.", "genre": "Science"}
+{"prompt": "What is the most abundant element in the universe?", "answer": "Hydrogen is the most abundant element in the universe.", "genre": "Science"}
+{"prompt": "What is the name of the reaction where an acid and a base neutralize each other?", "answer": "A neutralization reaction produces salt and water.", "genre": "Science"}
+{"prompt": "Which state of matter has a definite volume but no definite shape?", "answer": "Liquid has a definite volume but takes the shape of its container.", "genre": "Science"}
+{"prompt": "What are the elements in group 18 of the periodic table called?", "answer": "They are called noble gases, known for their low reactivity.", "genre": "Science"}
+{"prompt": "What is the basic structural and functional unit of all living organisms?", "answer": "The cell is the basic unit of life.", "genre": "Science"}
+{"prompt": "What is the primary function of red blood cells?", "answer": "They carry oxygen from the lungs to the body's tissues and return carbon dioxide.", "genre": "Science"}
+{"prompt": "What process results in two genetically identical daughter cells?", "answer": "Mitosis is the process of cell division that results in two genetically identical daughter cells.", "genre": "Science"}
+{"prompt": "What is the role of the heart in the circulatory system?", "answer": "The heart pumps blood throughout the body to deliver oxygen and nutrients.", "genre": "Science"}
+{"prompt": "What is DNA and where is it mainly found?", "answer": "DNA is the hereditary material, found mainly in the cell nucleus.", "genre": "Science"}
+{"prompt": "What is an ecosystem?", "answer": "An ecosystem is a community of living organisms interacting with their non-living environment.", "genre": "Science"}
+{"prompt": "What is the largest organ in the human body?", "answer": "The skin is the largest organ in the human body.", "genre": "Science"}
+{"prompt": "Which pigment gives plants their green color and aids in photosynthesis?", "answer": "Chlorophyll is the green pigment that captures light energy for photosynthesis.", "genre": "Science"}
+{"prompt": "What is a key structural difference between prokaryotic and eukaryotic cells?", "answer": "Prokaryotic cells lack a nucleus and membrane-bound organelles, while eukaryotic cells have a nucleus.", "genre": "Science"}
+{"prompt": "What is the theory of evolution by natural selection proposed by Charles Darwin?", "answer": "It proposes that organisms better adapted to their environment tend to survive and produce more offspring.", "genre": "Science"}
+{"prompt": "What is the closest star to Earth?", "answer": "The Sun is the closest star to Earth.", "genre": "Science"}
+{"prompt": "What is the name of the galaxy that contains our solar system?", "answer": "The Milky Way galaxy contains our solar system.", "genre": "Science"}
+{"prompt": "What causes the phases of the Moon?", "answer": "They are caused by the changing angles of illumination from the Sun as the Moon orbits Earth.", "genre": "Science"}
+{"prompt": "What is a black hole?", "answer": "A black hole is a region of spacetime with gravitational acceleration so strong that nothing, not even light, can escape.", "genre": "Science"}
+{"prompt": "How long does it take for Earth to complete one revolution around the Sun?", "answer": "It takes approximately 365.25 days, or one year.", "genre": "Science"}
+{"prompt": "What is the name of the largest planet in our solar system?", "answer": "Jupiter is the largest planet in our solar system.", "genre": "Science"}
+{"prompt": "What is a supernova?", "answer": "A supernova is a powerful and luminous stellar explosion that occurs at the end of a massive star's life.", "genre": "Science"}
+{"prompt": "Where is the asteroid belt located?", "answer": "It is located between the orbits of Mars and Jupiter.", "genre": "Science"}
+{"prompt": "What is the name of the outermost solid layer of the Earth?", "answer": "The crust is the outermost solid layer of the Earth.", "genre": "Science"}
+{"prompt": "What process breaks down rocks into smaller pieces by wind, water, or ice?", "answer": "Weathering is the breakdown of rocks at or near the Earth's surface.", "genre": "Science"}
+{"prompt": "What is the difference between weather and climate?", "answer": "Weather refers to short-term atmospheric conditions, while climate is the average weather over a long period.", "genre": "Science"}
+{"prompt": "What drives the movement of tectonic plates?", "answer": "Convection currents in the Earth's mantle drive the movement of tectonic plates.", "genre": "Science"}
+{"prompt": "What is the greenhouse effect?", "answer": "The greenhouse effect is the trapping of the sun's heat in the atmosphere by greenhouse gases.", "genre": "Science"}
+{"prompt": "What is the water cycle?", "answer": "It describes the continuous movement of water through evaporation, condensation, and precipitation.", "genre": "Science"}
+{"prompt": "Which gas is the third most abundant in Earth's atmosphere after nitrogen and oxygen?", "answer": "Argon is the third most abundant gas in the atmosphere.", "genre": "Science"}
+{"prompt": "How does a concave lens differ from a convex lens?", "answer": "A concave lens is thinner at the center and diverges light, while a convex lens is thicker and converges light.", "genre": "Science"}
+{"prompt": "What are the main products of complete combustion of hydrocarbons?", "answer": "Carbon dioxide and water are the main products.", "genre": "Science"}
+{"prompt": "What is the purpose of the nervous system?", "answer": "It transmits signals between parts of the body to coordinate actions and sense the environment.", "genre": "Science"}
+{"prompt": "What is the name of the largest moon of Saturn?", "answer": "Titan is the largest moon of Saturn.", "genre": "Science"}
+{"prompt": "What is the Richter scale used to measure?", "answer": "It measures the magnitude of earthquakes.", "genre": "Science"}
+{"prompt": "What is Archimedes' principle of buoyancy?", "answer": "It states that the buoyant force on an object equals the weight of the fluid displaced by the object.", "genre": "Science"}
+{"prompt": "What is a catalyst in chemistry?", "answer": "A catalyst speeds up a chemical reaction without being consumed.", "genre": "Science"}
+{"prompt": "What is the function of the mitochondria?", "answer": "The mitochondria generate most of the cell's energy.", "genre": "Science"}
+{"prompt": "What is a light-year?", "answer": "A light-year is the distance that light travels in one year, about 9.46 trillion kilometers.", "genre": "Science"}
+{"prompt": "What are the three main types of rock?", "answer": "Igneous, sedimentary, and metamorphic are the three main rock types.", "genre": "Science"}
+{"prompt": "What does the law of reflection state?", "answer": "It states that the angle of incidence equals the angle of reflection.", "genre": "Science"}
+{"prompt": "What is the chemical formula for table salt?", "answer": "NaCl, or sodium chloride.", "genre": "Science"}
+{"prompt": "What is the primary function of the small intestine?", "answer": "It absorbs nutrients from digested food into the bloodstream.", "genre": "Science"}
+{"prompt": "What is the SI unit of electrical resistance?", "answer": "The ohm (\u03a9) is the SI unit of electrical resistance.", "genre": "Science"}
+{"prompt": "What is the process of a solid changing directly to a gas called?", "answer": "Sublimation.", "genre": "Science"}
+{"prompt": "What is the main difference between arteries and veins?", "answer": "Arteries carry blood away from the heart, while veins carry blood back to the heart.", "genre": "Science"}
+{"prompt": "What is the name of the second planet from the Sun?", "answer": "Venus.", "genre": "Science"}
+{"prompt": "What is the Coriolis effect?", "answer": "It is the deflection of moving objects caused by Earth's rotation.", "genre": "Science"}
+{"prompt": "What is the formula for kinetic energy?", "answer": "KE = 1/2 mv^2, where m is mass and v is velocity.", "genre": "Science"}
+{"prompt": "What gases are produced by the electrolysis of water?", "answer": "Hydrogen gas and oxygen gas.", "genre": "Science"}
+{"prompt": "What is the function of ribosomes in a cell?", "answer": "Ribosomes are the sites of protein synthesis.", "genre": "Science"}
+{"prompt": "What causes a solar eclipse?", "answer": "A solar eclipse occurs when the Moon passes between the Sun and Earth, blocking the Sun's light.", "genre": "Science"}
+{"prompt": "What is the definition of a mineral?", "answer": "A mineral is a naturally occurring, inorganic solid with a definite chemical composition and crystalline structure.", "genre": "Science"}
+{"prompt": "How does direct current differ from alternating current?", "answer": "DC flows in one direction, while AC periodically reverses direction.", "genre": "Science"}
+{"prompt": "What is the atomic number of oxygen?", "answer": "8.", "genre": "Science"}
+{"prompt": "What is the fluid that fills cells and contains organelles called?", "answer": "Cytoplasm.", "genre": "Science"}
+{"prompt": "What is the average distance from Earth to the Sun called?", "answer": "An astronomical unit (AU).", "genre": "Science"}
+{"prompt": "What is the layer of the atmosphere directly above the troposphere?", "answer": "The stratosphere.", "genre": "Science"}
+{"prompt": "What is the conservation of momentum?", "answer": "In a closed system, total momentum before a collision equals total momentum after.", "genre": "Science"}
+{"prompt": "What type of compound is NaCl?", "answer": "It is an ionic compound.", "genre": "Science"}
+{"prompt": "What is the role of the pancreas in digestion?", "answer": "It produces digestive enzymes and releases insulin to regulate blood sugar.", "genre": "Science"}
+{"prompt": "Which dwarf planet was formerly considered the ninth planet?", "answer": "Pluto.", "genre": "Science"}
+{"prompt": "What is the primary cause of ocean tides?", "answer": "Tides are caused primarily by the gravitational pull of the Moon.", "genre": "Science"}
+{"prompt": "What is the frequency of a wave?", "answer": "It is the number of complete wave cycles that pass a point per unit time.", "genre": "Science"}
+{"prompt": "What is a homogeneous mixture also called?", "answer": "A solution.", "genre": "Science"}
+{"prompt": "What is the function of the lungs?", "answer": "They exchange oxygen and carbon dioxide between the air and the blood.", "genre": "Science"}
+{"prompt": "What is a photon?", "answer": "A photon is a particle of light carrying a quantum of electromagnetic radiation.", "genre": "Science"}
+{"prompt": "What is the common name for dilute acetic acid?", "answer": "Vinegar.", "genre": "Science"}
+{"prompt": "What is the largest part of the human brain?", "answer": "The cerebrum.", "genre": "Science"}
+{"prompt": "What is the name of the star at the center of our solar system?", "answer": "The Sun.", "genre": "Science"}
+{"prompt": "What is a fossil?", "answer": "A fossil is the preserved remains or traces of an ancient organism.", "genre": "Science"}
+{"prompt": "What is the difference between mass and weight?", "answer": "Mass is the amount of matter, while weight is the force of gravity on that mass.", "genre": "Science"}
+{"prompt": "What is the chemical symbol for gold?", "answer": "Au.", "genre": "Science"}
+{"prompt": "What is the process by which organisms maintain a stable internal environment?", "answer": "Homeostasis.", "genre": "Science"}
+{"prompt": "What are the rings of Saturn primarily made of?", "answer": "They are made mostly of ice particles and rock debris.", "genre": "Science"}
+{"prompt": "What is the name of the supercontinent that existed millions of years ago?", "answer": "Pangaea.", "genre": "Science"}
+{"prompt": "What is the SI unit of power?", "answer": "The watt.", "genre": "Science"}
+{"prompt": "What is the term for the number of protons in an atom's nucleus?", "answer": "The atomic number.", "genre": "Science"}
+{"prompt": "What is a key difference between innate and adaptive immunity?", "answer": "Innate immunity is non-specific and immediate, while adaptive immunity is specific and develops after exposure.", "genre": "Science"}
+{"prompt": "What was the name of the first artificial satellite launched into space?", "answer": "Sputnik 1.", "genre": "Science"}
+{"prompt": "What is the process of evaporation?", "answer": "It is the change of a liquid to a gas below its boiling point at the surface.", "genre": "Science"}
+{"prompt": "What does the term 'inertia' refer to?", "answer": "Inertia is the tendency of an object to resist changes in its state of motion.", "genre": "Science"}
+{"prompt": "What is the main component of natural gas?", "answer": "Methane (CH4).", "genre": "Science"}
+{"prompt": "What is the primary function of the human skeleton?", "answer": "It provides support, protection for organs, and enables movement.", "genre": "Science"}
+{"prompt": "What is the name of the boundary between the Earth's crust and mantle?", "answer": "The Mohorovi\u010di\u0107 discontinuity, or Moho.", "genre": "Science"}
+{"prompt": "What is the relationship between wavelength and frequency in a wave?", "answer": "They are inversely proportional: higher frequency means shorter wavelength, assuming constant speed.", "genre": "Science"}
+{"prompt": "What is the name of the process in which a liquid turns into a solid?", "answer": "Freezing, or solidification.", "genre": "Science"}
+{"prompt": "Which organ in the human body filters waste from the blood to produce urine?", "answer": "The kidneys filter waste and produce urine.", "genre": "Science"}
+{"prompt": "What is the chemical formula for carbon dioxide?", "answer": "CO2.", "genre": "Science"}
+{"prompt": "What force opposes motion between two surfaces in contact?", "answer": "Friction.", "genre": "Science"}
+{"prompt": "What is the name of the smallest unit of an element that retains its chemical properties?", "answer": "An atom.", "genre": "Science"}
+{"prompt": "Which layer of the Earth is composed of liquid iron and nickel?", "answer": "The outer core.", "genre": "Science"}
+{"prompt": "What astronomical event occurs when a planet passes directly between Earth and the Sun?", "answer": "A transit.", "genre": "Science"}
+{"prompt": "What is the primary role of chlorophyll in plants?", "answer": "It absorbs light energy to drive photosynthesis.", "genre": "Science"}
+{"prompt": "What type of simple machine is a wheelbarrow?", "answer": "A wheelbarrow is a class 2 lever.", "genre": "Science"}
+{"prompt": "What is the freezing point of water in degrees Celsius?", "answer": "0\u00b0C.", "genre": "Science"}
+{"prompt": "What are the building blocks of proteins?", "answer": "Amino acids.", "genre": "Science"}
+{"prompt": "What term describes the amount of matter in an object?", "answer": "Mass.", "genre": "Science"}
+{"prompt": "Which planet is known for its prominent ring system made of ice and rock?", "answer": "Saturn.", "genre": "Science"}
+{"prompt": "What is the main function of the respiratory system?", "answer": "It supplies oxygen to the blood and removes carbon dioxide.", "genre": "Science"}
+{"prompt": "What happens to the volume of a gas when pressure increases at constant temperature?", "answer": "The volume decreases, according to Boyle's law.", "genre": "Science"}
+{"prompt": "What is the term for a substance that cannot be broken down into simpler substances by chemical means?", "answer": "An element.", "genre": "Science"}
+{"prompt": "Which organelle is known as the 'powerhouse of the cell'?", "answer": "The mitochondrion.", "genre": "Science"}
+{"prompt": "What is the study of the physical universe beyond Earth's atmosphere called?", "answer": "Astronomy.", "genre": "Science"}
+{"prompt": "What type of rock forms from the cooling and solidification of magma?", "answer": "Igneous rock.", "genre": "Science"}
+{"prompt": "What is the function of platelets in the blood?", "answer": "They help in blood clotting to prevent bleeding.", "genre": "Science"}
+{"prompt": "What is the SI unit of electric current?", "answer": "The ampere.", "genre": "Science"}
+{"prompt": "What term refers to the total kinetic energy of particles in a substance?", "answer": "Thermal energy, or heat energy.", "genre": "Science"}
+{"prompt": "What is the name of the eye's transparent front layer that helps focus light?", "answer": "The cornea.", "genre": "Science"}
+{"prompt": "Which natural phenomenon is caused by the rapid release of energy from the Earth's crust?", "answer": "An earthquake.", "genre": "Science"}
+{"prompt": "What is the chemical symbol for sodium?", "answer": "Na.", "genre": "Science"}
+{"prompt": "What is the main difference between a physical change and a chemical change?", "answer": "A physical change does not form new substances, while a chemical change does.", "genre": "Science"}
+{"prompt": "What provides the centripetal force that keeps planets in orbit around the Sun?", "answer": "Gravitational force from the Sun.", "genre": "Science"}
+{"prompt": "What is the name of the largest ocean on Earth?", "answer": "The Pacific Ocean.", "genre": "Science"}
+{"prompt": "What is the primary function of the human digestive system?", "answer": "It breaks down food into nutrients for absorption and energy.", "genre": "Science"}
+{"prompt": "What is the term for an atom that has gained or lost electrons?", "answer": "An ion.", "genre": "Science"}
+{"prompt": "What is the point in the Earth's orbit where it is farthest from the Sun called?", "answer": "Aphelion.", "genre": "Science"}
+{"prompt": "Which type of electromagnetic radiation has the shortest wavelength?", "answer": "Gamma rays.", "genre": "Science"}
+{"prompt": "What is the basic unit of heredity?", "answer": "A gene.", "genre": "Science"}
+{"prompt": "What is the name of the force that holds atomic nuclei together?", "answer": "The strong nuclear force.", "genre": "Science"}
+{"prompt": "What is the process of water vapor cooling and turning into liquid water droplets?", "answer": "Condensation.", "genre": "Science"}
+{"prompt": "What type of energy is stored in the bonds of chemical compounds?", "answer": "Chemical potential energy.", "genre": "Science"}
+{"prompt": "Which blood vessels carry oxygenated blood away from the heart?", "answer": "Arteries.", "genre": "Science"}
+{"prompt": "What is the name of the theory that describes the origin of the universe as a rapid expansion?", "answer": "The Big Bang theory.", "genre": "Science"}
+{"prompt": "What is the pH range of acids?", "answer": "Less than 7.", "genre": "Science"}
+{"prompt": "What is the primary component of the Sun's mass?", "answer": "Hydrogen.", "genre": "Science"}
+{"prompt": "What is the function of the spinal cord in the nervous system?", "answer": "It transmits neural signals between the brain and the rest of the body.", "genre": "Science"}
+{"prompt": "What occurs during a chemical reaction?", "answer": "Reactants are transformed into products with new chemical bonds.", "genre": "Science"}
+{"prompt": "What is the measure of the average kinetic energy of particles in a substance?", "answer": "Temperature.", "genre": "Science"}
+{"prompt": "Which planet is known as the 'Red Planet'?", "answer": "Mars.", "genre": "Science"}
+{"prompt": "What is the name of the carbohydrate that plants store for energy?", "answer": "Starch.", "genre": "Science"}
+{"prompt": "What is the principle of superposition in geology?", "answer": "It states that in undisturbed rock layers, the oldest layers are at the bottom.", "genre": "Science"}
+{"prompt": "What does a barometer measure?", "answer": "Atmospheric pressure.", "genre": "Science"}
+{"prompt": "What is the name of the tube that connects the throat to the stomach?", "answer": "The esophagus.", "genre": "Science"}
+{"prompt": "What is the SI unit of luminous intensity?", "answer": "The candela.", "genre": "Science"}
+{"prompt": "What is the main gas produced by burning fossil fuels that contributes to climate change?", "answer": "Carbon dioxide.", "genre": "Science"}
+{"prompt": "What is the term for a group of tissues that work together to perform a specific function?", "answer": "An organ.", "genre": "Science"}
+{"prompt": "What is the difference between an exothermic and an endothermic reaction?", "answer": "Exothermic releases heat, while endothermic absorbs heat.", "genre": "Science"}
+{"prompt": "What is the celestial body called that orbits a star and is large enough to be rounded by its own gravity?", "answer": "A planet.", "genre": "Science"}
+{"prompt": "What is the function of the human immune system?", "answer": "It defends the body against pathogens and disease.", "genre": "Science"}
+{"prompt": "What type of mirror forms a virtual, upright, and reduced image?", "answer": "A convex mirror.", "genre": "Science"}
+{"prompt": "What is the chemical name for the compound with the formula CH4?", "answer": "Methane.", "genre": "Science"}
+{"prompt": "What is the outermost layer of a plant cell that provides structural support?", "answer": "The cell wall.", "genre": "Science"}
+{"prompt": "What is the term for the movement of particles from high concentration to low concentration?", "answer": "Diffusion.", "genre": "Science"}
+{"prompt": "What is the name of the scientist who first formulated the laws of planetary motion?", "answer": "Johannes Kepler.", "genre": "Science"}
+{"prompt": "What is the boiling point of water at standard atmospheric pressure?", "answer": "100\u00b0C.", "genre": "Science"}
+{"prompt": "What type of energy does a moving car possess?", "answer": "Kinetic energy.", "genre": "Science"}
+{"prompt": "What is the main role of the skeletal system in mineral storage?", "answer": "It stores calcium and phosphorus for the body's needs.", "genre": "Science"}
+{"prompt": "What is the name for the horizontal movement of air due to differences in pressure?", "answer": "Wind.", "genre": "Science"}
+{"prompt": "What is the chemical symbol for iron?", "answer": "Fe.", "genre": "Science"}
+{"prompt": "What is the function of the pistil in a flower?", "answer": "It is the female reproductive part that receives pollen and produces seeds.", "genre": "Science"}
+{"prompt": "What is the relationship between voltage, current, and resistance called?", "answer": "Ohm's law.", "genre": "Science"}
+{"prompt": "What is the name of the largest moon in the solar system?", "answer": "Ganymede.", "genre": "Science"}
+{"prompt": "What is the process of a gas turning directly into a solid called?", "answer": "Deposition.", "genre": "Science"}
+{"prompt": "What are the three main types of muscle tissue in the human body?", "answer": "Skeletal, cardiac, and smooth muscle.", "genre": "Science"}
+{"prompt": "What is the phenomenon where light is bounced off a surface called?", "answer": "Reflection.", "genre": "Science"}
+{"prompt": "What is the atomic mass unit based on?", "answer": "It is based on one-twelfth the mass of a carbon-12 atom.", "genre": "Science"}
+{"prompt": "What is the main source of energy for the water cycle?", "answer": "The Sun.", "genre": "Science"}
+{"prompt": "What is the name of the genetic material found in the mitochondria?", "answer": "Mitochondrial DNA.", "genre": "Science"}
+{"prompt": "What is the term for an animal that eats both plants and animals?", "answer": "An omnivore.", "genre": "Science"}
+{"prompt": "What is the unit of frequency in the SI system?", "answer": "The hertz.", "genre": "Science"}
+{"prompt": "What is the function of the gallbladder?", "answer": "It stores and concentrates bile produced by the liver.", "genre": "Science"}
+{"prompt": "What is the name of the closest large galaxy to the Milky Way?", "answer": "The Andromeda Galaxy.", "genre": "Science"}
+{"prompt": "What does the term 'isotope' refer to?", "answer": "Atoms of the same element with different numbers of neutrons.", "genre": "Science"}
+{"prompt": "What is the primary factor that determines the climate of a region?", "answer": "Latitude, along with altitude and proximity to water.", "genre": "Science"}
+{"prompt": "What is the name of the reaction that joins two monosaccharides to form a disaccharide?", "answer": "Dehydration synthesis or condensation reaction.", "genre": "Science"}
+{"prompt": "What is the part of the brain that controls balance and coordination?", "answer": "The cerebellum.", "genre": "Science"}
+{"prompt": "What is the name of the path that a planet takes around the Sun?", "answer": "An orbit.", "genre": "Science"}
+{"prompt": "What is the main product of aerobic respiration in humans?", "answer": "Carbon dioxide, water, and ATP energy.", "genre": "Science"}
+{"prompt": "What is the force per unit area acting on a surface called?", "answer": "Pressure.", "genre": "Science"}
+{"prompt": "What is the name of the innermost layer of the Earth?", "answer": "The inner core.", "genre": "Science"}
+{"prompt": "What type of lens is used to correct nearsightedness?", "answer": "A concave lens.", "genre": "Science"}
+{"prompt": "What is the chemical formula for glucose?", "answer": "C6H12O6.", "genre": "Science"}
+{"prompt": "What is the role of decomposers in an ecosystem?", "answer": "They break down dead organic matter and recycle nutrients.", "genre": "Science"}
+{"prompt": "What is the term for the bending of waves around obstacles?", "answer": "Diffraction.", "genre": "Science"}
+{"prompt": "What is the name of the hormone that regulates blood sugar levels by lowering it?", "answer": "Insulin.", "genre": "Science"}
+{"prompt": "What is the primary component of the Sun's outer atmosphere, or corona?", "answer": "Plasma, composed of ionized gases.", "genre": "Science"}
+{"prompt": "What is the process by which sedimentary rock is formed?", "answer": "Compaction and cementation of sediments over time.", "genre": "Science"}
+{"prompt": "What is the SI unit of magnetic flux density?", "answer": "The tesla.", "genre": "Science"}
+{"prompt": "What is the name of the pigment in red blood cells that binds oxygen?", "answer": "Hemoglobin.", "genre": "Science"}
+{"prompt": "What is the point in Earth's orbit closest to the Sun called?", "answer": "Perihelion.", "genre": "Science"}
+{"prompt": "What is the difference between a pure substance and a mixture?", "answer": "A pure substance has a fixed composition, while a mixture has variable composition.", "genre": "Science"}
+{"prompt": "What is the function of the hypothalamus in the brain?", "answer": "It regulates body temperature, hunger, and thirst.", "genre": "Science"}
+{"prompt": "What is the name of the force that causes objects to fall toward the center of the Earth?", "answer": "Gravity.", "genre": "Science"}
+{"prompt": "What is the name of the large, flat areas of the ocean floor?", "answer": "Abyssal plains.", "genre": "Science"}
+{"prompt": "What does the 'git status' command show?", "answer": "It shows the current state of the working directory and staging area, indicating changes that are staged, not staged, or untracked.", "genre": "Programming"}
+{"prompt": "What is the time complexity of binary search on a sorted array?", "answer": "The time complexity is O(log n), where n is the number of elements.", "genre": "Programming"}
+{"prompt": "What is the default port number for HTTP traffic?", "answer": "The default port for HTTP is 80.", "genre": "Programming"}
+{"prompt": "What is the default port number for HTTPS traffic?", "answer": "The default port for HTTPS is 443.", "genre": "Programming"}
+{"prompt": "What does the acronym SQL stand for?", "answer": "SQL stands for Structured Query Language.", "genre": "Programming"}
+{"prompt": "What is a primary key in a relational database?", "answer": "A primary key is a unique identifier for each record in a table, ensuring no duplicate or null values.", "genre": "Programming"}
+{"prompt": "What is an API in software development?", "answer": "An API, or Application Programming Interface, is a set of rules that allows different software applications to communicate with each other.", "genre": "Programming"}
+{"prompt": "What is the difference between '==' and '===' in JavaScript?", "answer": "'==' checks for equality with type coercion, while '===' checks for strict equality without type coercion.", "genre": "Programming"}
+{"prompt": "What is a constructor in object-oriented programming?", "answer": "A constructor is a special method automatically called when an object is instantiated to initialize its properties.", "genre": "Programming"}
+{"prompt": "What does the 'break' statement do inside a loop?", "answer": "The 'break' statement immediately exits the loop and transfers control to the next statement after the loop.", "genre": "Programming"}
+{"prompt": "What is a stack data structure?", "answer": "A stack is a Last-In, First-Out (LIFO) data structure where elements are added and removed from the top.", "genre": "Programming"}
+{"prompt": "What is a queue data structure?", "answer": "A queue is a First-In, First-Out (FIFO) data structure where elements are added at the rear and removed from the front.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'finally' block in exception handling?", "answer": "The 'finally' block executes code regardless of whether an exception was thrown or caught, typically used for cleanup operations.", "genre": "Programming"}
+{"prompt": "What is a deadlock in concurrent programming?", "answer": "A deadlock is a situation where two or more processes are blocked forever, each waiting for a resource held by the other.", "genre": "Programming"}
+{"prompt": "What does CSS stand for?", "answer": "CSS stands for Cascading Style Sheets.", "genre": "Programming"}
+{"prompt": "What is the role of a router in web development frameworks?", "answer": "A router maps incoming URL requests to specific controller actions or handler functions within the application.", "genre": "Programming"}
+{"prompt": "What is a relational database?", "answer": "A relational database organizes data into tables with rows and columns and uses structured query language for management.", "genre": "Programming"}
+{"prompt": "What is an index in a database?", "answer": "An index is a data structure that improves the speed of data retrieval operations on a table at the cost of extra storage.", "genre": "Programming"}
+{"prompt": "What does the 'this' keyword refer to in JavaScript?", "answer": "The 'this' keyword refers to the execution context of a function, typically the object that owns the current code.", "genre": "Programming"}
+{"prompt": "What is polymorphism in object-oriented programming?", "answer": "Polymorphism is the ability of objects of different types to respond to the same method call in their own specific ways.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'super' keyword in Java?", "answer": "The 'super' keyword refers to the immediate parent class object and is used to access parent class methods or constructors.", "genre": "Programming"}
+{"prompt": "What is the worst-case time complexity of bubble sort?", "answer": "The worst-case time complexity of bubble sort is O(n^2).", "genre": "Programming"}
+{"prompt": "What is a linked list?", "answer": "A linked list is a linear data structure where elements are stored in nodes, with each node pointing to the next node via a pointer.", "genre": "Programming"}
+{"prompt": "What is a semaphore in operating systems?", "answer": "A semaphore is a synchronization primitive used to control access to shared resources by multiple processes or threads.", "genre": "Programming"}
+{"prompt": "What is the Git command to clone a remote repository?", "answer": "The command is 'git clone <repository-url>'.", "genre": "Programming"}
+{"prompt": "What does the 'continue' statement do in a loop?", "answer": "The 'continue' statement skips the rest of the current iteration and moves to the next iteration of the loop.", "genre": "Programming"}
+{"prompt": "What is a callback function?", "answer": "A callback function is a function passed as an argument to another function, which is executed after the outer function completes.", "genre": "Programming"}
+{"prompt": "What is JSON?", "answer": "JSON, or JavaScript Object Notation, is a lightweight data-interchange format that is easy for humans to read and write.", "genre": "Programming"}
+{"prompt": "What is the purpose of a Python virtual environment?", "answer": "A virtual environment creates an isolated space for Python projects to manage dependencies and avoid version conflicts.", "genre": "Programming"}
+{"prompt": "What does an HTTP status code of 404 indicate?", "answer": "A 404 status code indicates that the requested resource could not be found on the server.", "genre": "Programming"}
+{"prompt": "What does an HTTP status code of 200 indicate?", "answer": "A 200 status code indicates that the request was successful.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'git merge' command?", "answer": "The 'git merge' command combines changes from one branch into the current branch.", "genre": "Programming"}
+{"prompt": "What is a recursive function?", "answer": "A recursive function is a function that calls itself to solve a problem by breaking it down into smaller sub-problems.", "genre": "Programming"}
+{"prompt": "What is a compiler?", "answer": "A compiler translates source code written in a high-level language into machine code or bytecode all at once.", "genre": "Programming"}
+{"prompt": "What is an interpreter?", "answer": "An interpreter directly executes instructions written in a programming language line by line without prior compilation.", "genre": "Programming"}
+{"prompt": "What is the main difference between TCP and UDP?", "answer": "TCP is connection-oriented and reliable, while UDP is connectionless, faster, but does not guarantee delivery.", "genre": "Programming"}
+{"prompt": "What is an IP address?", "answer": "An IP address is a unique numerical label assigned to each device connected to a network that uses the Internet Protocol.", "genre": "Programming"}
+{"prompt": "What is DNS?", "answer": "DNS, or Domain Name System, translates human-readable domain names into machine-readable IP addresses.", "genre": "Programming"}
+{"prompt": "What is the purpose of an 'assert' statement in programming?", "answer": "An 'assert' statement tests a condition and triggers an error if the condition is false, used primarily for debugging.", "genre": "Programming"}
+{"prompt": "What is the singleton design pattern?", "answer": "The singleton pattern restricts a class to a single instance and provides a global point of access to that instance.", "genre": "Programming"}
+{"prompt": "What is the factory design pattern?", "answer": "The factory pattern provides an interface for creating objects without exposing the underlying instantiation logic.", "genre": "Programming"}
+{"prompt": "What is a database transaction?", "answer": "A database transaction groups multiple operations into a single unit of work that follows the ACID properties.", "genre": "Programming"}
+{"prompt": "What does the ACID acronym stand for in databases?", "answer": "ACID stands for Atomicity, Consistency, Isolation, and Durability.", "genre": "Programming"}
+{"prompt": "What is a NoSQL database?", "answer": "A NoSQL database is a non-relational database that stores data in formats such as key-value, document, graph, or column-family.", "genre": "Programming"}
+{"prompt": "What is a foreign key in a database?", "answer": "A foreign key is a field in one table that refers to the primary key of another table, establishing a relationship.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'WHERE' clause in SQL?", "answer": "The 'WHERE' clause filters records based on specified conditions in a SQL query.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'GROUP BY' clause in SQL?", "answer": "The 'GROUP BY' clause groups rows that have the same values in specified columns into summary rows, often used with aggregates.", "genre": "Programming"}
+{"prompt": "What is the difference between stack and heap memory?", "answer": "The stack handles static memory allocation and function calls, while the heap is used for dynamic memory allocation.", "genre": "Programming"}
+{"prompt": "What is a garbage collector?", "answer": "A garbage collector is an automatic memory management system that reclaims memory occupied by objects no longer in use.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'main' function in C or Java?", "answer": "The 'main' function serves as the entry point for the program's execution.", "genre": "Programming"}
+{"prompt": "What is an algorithm?", "answer": "An algorithm is a step-by-step procedure or set of rules designed to solve a specific problem or accomplish a task.", "genre": "Programming"}
+{"prompt": "What is the binary number system?", "answer": "The binary number system is a base-2 system that uses only two digits, 0 and 1.", "genre": "Programming"}
+{"prompt": "What is the hexadecimal number system?", "answer": "The hexadecimal number system is a base-16 system using digits 0-9 and letters A-F.", "genre": "Programming"}
+{"prompt": "What is the purpose of a hash function?", "answer": "A hash function maps input data of arbitrary size to a fixed-size output, used for fast data lookup or cryptographic integrity.", "genre": "Programming"}
+{"prompt": "What is a collision in hashing?", "answer": "A collision occurs when two different inputs produce the same hash output.", "genre": "Programming"}
+{"prompt": "What is the difference between a class and an object?", "answer": "A class is a blueprint or template, while an object is a specific instance of that class.", "genre": "Programming"}
+{"prompt": "What is inheritance in object-oriented programming?", "answer": "Inheritance is a mechanism where a new class derives properties and methods from an existing class.", "genre": "Programming"}
+{"prompt": "What is encapsulation in object-oriented programming?", "answer": "Encapsulation bundles data and methods together while restricting direct access to some components, hiding internal state.", "genre": "Programming"}
+{"prompt": "What is an abstract class?", "answer": "An abstract class cannot be instantiated and may contain abstract methods that must be implemented by its subclasses.", "genre": "Programming"}
+{"prompt": "What is an interface in Java?", "answer": "An interface is a reference type that defines a contract of abstract methods which implementing classes must provide.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'static' keyword in Java?", "answer": "The 'static' keyword indicates that a member belongs to the class itself rather than to any particular instance.", "genre": "Programming"}
+{"prompt": "What is a thread in computing?", "answer": "A thread is the smallest unit of execution within a process, capable of running concurrently with other threads.", "genre": "Programming"}
+{"prompt": "What is a process in an operating system?", "answer": "A process is an instance of a running program, with its own memory space and system resources.", "genre": "Programming"}
+{"prompt": "What is the Linux command to list files in a directory?", "answer": "The command is 'ls' (or 'ls -l' for a detailed list).", "genre": "Programming"}
+{"prompt": "What is the Linux command to change the current directory?", "answer": "The command is 'cd <directory>'.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'chmod' command in Linux?", "answer": "The 'chmod' command changes the read, write, and execute permissions of files and directories.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'pip' tool in Python?", "answer": "'pip' is the package installer for Python, used to install and manage external libraries.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'npm' tool in Node.js?", "answer": "'npm' is the package manager for JavaScript and Node.js, used to install and manage project dependencies.", "genre": "Programming"}
+{"prompt": "What is an environment variable?", "answer": "An environment variable is a dynamic-named value that can affect the behavior of running processes on a computer.", "genre": "Programming"}
+{"prompt": "What is a shell in computing?", "answer": "A shell is a command-line interpreter that provides a user interface for accessing operating system services.", "genre": "Programming"}
+{"prompt": "What is a regular expression?", "answer": "A regular expression is a sequence of characters that forms a search pattern, used for matching and manipulating strings.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'return' statement in a function?", "answer": "The 'return' statement specifies the value to be sent back to the caller and optionally exits the function.", "genre": "Programming"}
+{"prompt": "What is a ternary operator?", "answer": "A ternary operator is a conditional operator (e.g., condition ? expr1 : expr2) that provides a shorthand for if-else statements.", "genre": "Programming"}
+{"prompt": "What is the difference between 'let' and 'var' in JavaScript?", "answer": "'let' has block scope, while 'var' has function or global scope and is hoisted differently.", "genre": "Programming"}
+{"prompt": "What is a promise in JavaScript?", "answer": "A promise is an object representing the eventual completion or failure of an asynchronous operation.", "genre": "Programming"}
+{"prompt": "What is the 'async/await' syntax in JavaScript?", "answer": "'async/await' is syntactic sugar for working with promises, making asynchronous code appear synchronous.", "genre": "Programming"}
+{"prompt": "What is a decorator in Python?", "answer": "A decorator is a higher-order function that takes another function and extends its behavior without modifying it directly.", "genre": "Programming"}
+{"prompt": "What is a list comprehension in Python?", "answer": "A list comprehension is a concise way to create lists by applying an expression to each item in an iterable, optionally with a condition.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'self' parameter in Python instance methods?", "answer": "The 'self' parameter refers to the instance of the class and allows access to its attributes and methods.", "genre": "Programming"}
+{"prompt": "What is a lambda function?", "answer": "A lambda function is a small anonymous function defined with a single expression, often used as a one-liner.", "genre": "Programming"}
+{"prompt": "What is the difference between a shallow copy and a deep copy?", "answer": "A shallow copy duplicates the top-level structure, while a deep copy recursively duplicates all nested objects.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'yield' keyword in Python?", "answer": "'yield' is used to create a generator, allowing iteration over a sequence without storing the entire list in memory.", "genre": "Programming"}
+{"prompt": "What is an ORM in programming?", "answer": "An ORM, or Object-Relational Mapping, maps database tables to programming objects, enabling database interaction via OOP.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'git branch' command?", "answer": "The 'git branch' command lists, creates, or deletes branches in a Git repository.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'git checkout' command?", "answer": "The 'git checkout' command switches between branches or restores working tree files.", "genre": "Programming"}
+{"prompt": "What is a pull request in version control?", "answer": "A pull request is a mechanism where proposed code changes are submitted for review and merging into a main branch.", "genre": "Programming"}
+{"prompt": "What is a merge conflict in Git?", "answer": "A merge conflict occurs when Git cannot automatically reconcile differences between two branches being merged.", "genre": "Programming"}
+{"prompt": "What is the purpose of a debugger?", "answer": "A debugger is a tool used to inspect and control the execution of a program to find and fix bugs.", "genre": "Programming"}
+{"prompt": "What is an IDE?", "answer": "An IDE, or Integrated Development Environment, is a software suite providing tools like a code editor, compiler, and debugger.", "genre": "Programming"}
+{"prompt": "What is the purpose of a version control system?", "answer": "A version control system tracks changes to files over time, enabling collaboration and rollback to previous versions.", "genre": "Programming"}
+{"prompt": "What is a unit test?", "answer": "A unit test verifies the correctness of a single isolated component or function of the software.", "genre": "Programming"}
+{"prompt": "What is the difference between a stack overflow and a memory leak?", "answer": "A stack overflow occurs when the call stack exceeds its limit, while a memory leak is a failure to release unused memory.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'const' keyword in JavaScript?", "answer": "The 'const' keyword declares a variable that cannot be reassigned after its initial assignment.", "genre": "Programming"}
+{"prompt": "What is the purpose of 'strict mode' in JavaScript?", "answer": "'Strict mode' enables stricter parsing and error handling, catching common coding mistakes and preventing unsafe actions.", "genre": "Programming"}
+{"prompt": "What is a RESTful API?", "answer": "A RESTful API is an architectural style using HTTP methods to operate on resources, commonly used for web services.", "genre": "Programming"}
+{"prompt": "What is GraphQL?", "answer": "GraphQL is a query language for APIs that allows clients to request exactly the data they need, reducing over-fetching.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'docker run' command?", "answer": "The 'docker run' command creates and starts a container from a specified Docker image.", "genre": "Programming"}
+{"prompt": "What is a container in software?", "answer": "A container is a lightweight, executable package that includes code, runtime, system tools, and dependencies for an application.", "genre": "Programming"}
+{"prompt": "What is the purpose of the 'ping' command?", "answer": "The 'ping' command tests network connectivity to a host by sending ICMP echo requests and measuring response times.", "genre": "Programming"}
+{"prompt": "What is the difference between a compiled and an interpreted language?", "answer": "A compiled language is translated into machine code before execution, while an interpreted language is executed line-by-line at runtime.", "genre": "Programming"}
+{"prompt": "What is the purpose of a load balancer in web infrastructure?", "answer": "A load balancer distributes incoming network traffic across multiple servers to ensure reliability and performance.", "genre": "Programming"}
+{"prompt": "What is a cache in computing?", "answer": "A cache is a hardware or software component that stores frequently accessed data to reduce latency and improve performance.", "genre": "Programming"}
+{"prompt": "Who was the first Roman Emperor?", "answer": "Augustus.", "genre": "history"}
+{"prompt": "In which year did the French Revolution begin?", "answer": "1789.", "genre": "history"}
+{"prompt": "What civilization built Machu Picchu?", "answer": "The Inca Empire.", "genre": "history"}
+{"prompt": "Who was the first President of the United States?", "answer": "George Washington.", "genre": "history"}
+{"prompt": "What ship carried the Pilgrims to America in 1620?", "answer": "The Mayflower.", "genre": "history"}
+{"prompt": "Who founded the Mongol Empire?", "answer": "Genghis Khan.", "genre": "history"}
+{"prompt": "Which archduke's assassination triggered World War I?", "answer": "Archduke Franz Ferdinand.", "genre": "history"}
+{"prompt": "What wall divided Berlin during the Cold War?", "answer": "The Berlin Wall.", "genre": "history"}
+{"prompt": "Who was the last active pharaoh of Egypt?", "answer": "Cleopatra VII.", "genre": "history"}
+{"prompt": "What treaty ended World War I?", "answer": "The Treaty of Versailles.", "genre": "history"}
+{"prompt": "Who invented the European printing press with movable type?", "answer": "Johannes Gutenberg.", "genre": "history"}
+{"prompt": "Which Greek city-state was known for its military society?", "answer": "Sparta.", "genre": "history"}
+{"prompt": "In what year did Columbus reach the Americas?", "answer": "1492.", "genre": "history"}
+{"prompt": "What were the religious wars between Christians and Muslims for the Holy Land called?", "answer": "The Crusades.", "genre": "history"}
+{"prompt": "Which Roman emperor legalized Christianity?", "answer": "Constantine the Great.", "genre": "history"}
+{"prompt": "What 1215 English document limited royal power?", "answer": "The Magna Carta.", "genre": "history"}
+{"prompt": "Who was the Soviet premier during the Cuban Missile Crisis?", "answer": "Nikita Khrushchev.", "genre": "history"}
+{"prompt": "Which Indian empire built the Taj Mahal?", "answer": "The Mughal Empire.", "genre": "history"}
+{"prompt": "What war gave the United States independence from Britain?", "answer": "The American Revolutionary War.", "genre": "history"}
+{"prompt": "Who delivered the 'I Have a Dream' speech?", "answer": "Martin Luther King Jr.", "genre": "history"}
+{"prompt": "What ancient wonder featured tiered gardens in Babylon?", "answer": "The Hanging Gardens of Babylon.", "genre": "history"}
+{"prompt": "Who was the first woman to fly solo across the Atlantic?", "answer": "Amelia Earhart.", "genre": "history"}
+{"prompt": "Which empire fell when the Ottomans took Constantinople?", "answer": "The Byzantine Empire.", "genre": "history"}
+{"prompt": "What country suffered the Khmer Rouge regime?", "answer": "Cambodia.", "genre": "history"}
+{"prompt": "Who was the president of the Confederacy?", "answer": "Jefferson Davis.", "genre": "history"}
+{"prompt": "What attack brought the US into World War II?", "answer": "The attack on Pearl Harbor.", "genre": "history"}
+{"prompt": "Which female Egyptian pharaoh ruled as a king?", "answer": "Hatshepsut.", "genre": "history"}
+{"prompt": "What early civilization invented cuneiform writing?", "answer": "Sumer.", "genre": "history"}
+{"prompt": "Who is called the 'Father of History'?", "answer": "Herodotus.", "genre": "history"}
+{"prompt": "Which Italian city was the heart of the Renaissance?", "answer": "Florence.", "genre": "history"}
+{"prompt": "Who painted the Sistine Chapel ceiling?", "answer": "Michelangelo.", "genre": "history"}
+{"prompt": "What was the first artificial satellite?", "answer": "Sputnik 1.", "genre": "history"}
+{"prompt": "What war featured the Battle of Gettysburg?", "answer": "The American Civil War.", "genre": "history"}
+{"prompt": "Who was the British PM for most of WWII?", "answer": "Winston Churchill.", "genre": "history"}
+{"prompt": "Which empire was known as the 'empire on which the sun never sets'?", "answer": "The British Empire.", "genre": "history"}
+{"prompt": "Who led the Bolshevik Revolution in 1917?", "answer": "Vladimir Lenin.", "genre": "history"}
+{"prompt": "What Greek philosopher wrote 'The Republic'?", "answer": "Plato.", "genre": "history"}
+{"prompt": "In which year did the Titanic sink?", "answer": "1912.", "genre": "history"}
+{"prompt": "Who led India's nonviolent independence movement?", "answer": "Mahatma Gandhi.", "genre": "history"}
+{"prompt": "What year did the Bolsheviks take power in Russia?", "answer": "1917.", "genre": "history"}
+{"prompt": "What ancient route linked China to the Mediterranean?", "answer": "The Silk Road.", "genre": "history"}
+{"prompt": "Who primarily authored the Declaration of Independence?", "answer": "Thomas Jefferson.", "genre": "history"}
+{"prompt": "Which empire was ruled by Suleiman the Magnificent?", "answer": "The Ottoman Empire.", "genre": "history"}
+{"prompt": "What was the name of the Nazi secret police?", "answer": "The Gestapo.", "genre": "history"}
+{"prompt": "Where was the first permanent English settlement in North America?", "answer": "Jamestown, Virginia.", "genre": "history"}
+{"prompt": "Which ancient civilization started the Olympic Games?", "answer": "Ancient Greece.", "genre": "history"}
+{"prompt": "Who was crowned the first Holy Roman Emperor in 800?", "answer": "Charlemagne.", "genre": "history"}
+{"prompt": "What 1494 treaty divided the New World between Spain and Portugal?", "answer": "The Treaty of Tordesillas.", "genre": "history"}
+{"prompt": "Who was the British king during the American Revolution?", "answer": "King George III.", "genre": "history"}
+{"prompt": "What stock market event in 1929 started the Great Depression?", "answer": "The Wall Street Crash.", "genre": "history"}
+{"prompt": "What Chinese philosopher wrote the Analects?", "answer": "Confucius.", "genre": "history"}
+{"prompt": "What Roman city was destroyed by Vesuvius in 79 AD?", "answer": "Pompeii.", "genre": "history"}
+{"prompt": "Which Carthaginian general used elephants to cross the Alps?", "answer": "Hannibal.", "genre": "history"}
+{"prompt": "What global conflict lasted from 1939 to 1945?", "answer": "World War II.", "genre": "history"}
+{"prompt": "Who formulated the theory of relativity?", "answer": "Albert Einstein.", "genre": "history"}
+{"prompt": "What Russian city was renamed Leningrad?", "answer": "Saint Petersburg.", "genre": "history"}
+{"prompt": "Who broke Major League Baseball's color barrier in 1947?", "answer": "Jackie Robinson.", "genre": "history"}
+{"prompt": "Which empire did Cortés conquer?", "answer": "The Aztec Empire.", "genre": "history"}
+{"prompt": "Which British queen led a revolt against Rome?", "answer": "Boudica.", "genre": "history"}
+{"prompt": "What 1776 document declared American independence?", "answer": "The Declaration of Independence.", "genre": "history"}
+{"prompt": "Who founded the Achaemenid Persian Empire?", "answer": "Cyrus the Great.", "genre": "history"}
+{"prompt": "What structure was built to protect northern China?", "answer": "The Great Wall of China.", "genre": "history"}
+{"prompt": "Who founded modern nursing during the Crimean War?", "answer": "Florence Nightingale.", "genre": "history"}
+{"prompt": "Which country remains divided at the 38th parallel?", "answer": "Korea.", "genre": "history"}
+{"prompt": "Who was the French emperor defeated at Waterloo?", "answer": "Napoleon Bonaparte.", "genre": "history"}
+{"prompt": "Who built the pyramids of Giza?", "answer": "The Ancient Egyptians.", "genre": "history"}
+{"prompt": "Who was the first person to step on the Moon?", "answer": "Neil Armstrong.", "genre": "history"}
+{"prompt": "What plague devastated Europe in the mid-14th century?", "answer": "The Black Death.", "genre": "history"}
+{"prompt": "Which Macedonian king conquered the Persian Empire?", "answer": "Alexander the Great.", "genre": "history"}
+{"prompt": "Which Apollo mission made the first lunar landing?", "answer": "Apollo 11.", "genre": "history"}
+{"prompt": "Who was the 'Virgin Queen' of England?", "answer": "Elizabeth I.", "genre": "history"}
+{"prompt": "Which empire in Peru was conquered by Pizarro?", "answer": "The Inca Empire.", "genre": "history"}
+{"prompt": "Who painted the Mona Lisa?", "answer": "Leonardo da Vinci.", "genre": "history"}
+{"prompt": "In which year did the Berlin Wall fall?", "answer": "1989.", "genre": "history"}
+{"prompt": "What was the last imperial dynasty of China?", "answer": "The Qing Dynasty.", "genre": "history"}
+{"prompt": "In what year was Israel founded?", "answer": "1948.", "genre": "history"}
+{"prompt": "Who wrote 'History of the Peloponnesian War'?", "answer": "Thucydides.", "genre": "history"}
+{"prompt": "What Roman amphitheater hosted gladiator fights?", "answer": "The Colosseum.", "genre": "history"}
+{"prompt": "Who was the dictator of Nazi Germany?", "answer": "Adolf Hitler.", "genre": "history"}
+{"prompt": "What was the capital of the Byzantine Empire?", "answer": "Constantinople.", "genre": "history"}
+{"prompt": "Who is regarded as the first British Prime Minister?", "answer": "Robert Walpole.", "genre": "history"}
+{"prompt": "Which US president issued the Emancipation Proclamation?", "answer": "Abraham Lincoln.", "genre": "history"}
+{"prompt": "Which West African empire was ruled by Mansa Musa?", "answer": "The Mali Empire.", "genre": "history"}
+{"prompt": "Who developed the polio vaccine?", "answer": "Jonas Salk.", "genre": "history"}
+{"prompt": "What temple on the Athenian Acropolis is dedicated to Athena?", "answer": "The Parthenon.", "genre": "history"}
+{"prompt": "In which year did the Spanish Armada sail against England?", "answer": "1588.", "genre": "history"}
+{"prompt": "Who led the Haitian slave rebellion?", "answer": "Toussaint Louverture.", "genre": "history"}
+{"prompt": "Which Babylonian king created a written code of laws?", "answer": "Hammurabi.", "genre": "history"}
+{"prompt": "What 1963 march featured MLK's speech?", "answer": "The March on Washington.", "genre": "history"}
+{"prompt": "Who was the first woman to win a Nobel Prize?", "answer": "Marie Curie.", "genre": "history"}
+{"prompt": "Which country did the US fight in the Spanish-American War?", "answer": "Spain.", "genre": "history"}
+{"prompt": "What fleet arrived in Australia in 1788 to start a colony?", "answer": "The First Fleet.", "genre": "history"}
+{"prompt": "Which Roman general crossed the Rubicon?", "answer": "Julius Caesar.", "genre": "history"}
+{"prompt": "What modern country was formerly known as Persia?", "answer": "Iran.", "genre": "history"}
+{"prompt": "Who founded psychoanalysis?", "answer": "Sigmund Freud.", "genre": "history"}
+{"prompt": "Which 1066 battle made William the Conqueror king?", "answer": "The Battle of Hastings.", "genre": "history"}
+{"prompt": "What was the name of the last Russian Tsar?", "answer": "Nicholas II.", "genre": "history"}
+{"prompt": "Which international organization was founded in 1945?", "answer": "The United Nations.", "genre": "history"}
+{"prompt": "Who was the first emperor to unify China?", "answer": "Qin Shi Huang.", "genre": "history"}
+{"prompt": "What 18th-century movement emphasized reason and individual rights?", "answer": "The Enlightenment.", "genre": "history"}
+{"prompt": "Why does ice float in water?", "answer": "Ice is less dense than liquid water because its crystalline structure occupies more volume, so it displaces less weight than the water it pushes aside.", "genre": "daily life explanations"}
+{"prompt": "Why do we yawn when we are tired?", "answer": "Yawning may help cool the brain and increase alertness, and it is also linked to changes in sleep-wake cycles and social bonding.", "genre": "daily life explanations"}
+{"prompt": "Why does a microwave oven heat food unevenly?", "answer": "Microwaves create standing wave patterns inside the oven, causing hot and cold spots, and different food components absorb energy at different rates.", "genre": "daily life explanations"}
+{"prompt": "Why do onions make us cry when we chop them?", "answer": "Chopping onions releases a volatile sulfur compound called syn-propanethial-S-oxide, which irritates the eyes and triggers tear production.", "genre": "daily life explanations"}
+{"prompt": "Why does popcorn pop in the microwave?", "answer": "The moisture inside the popcorn kernel turns to steam, building pressure until the hard outer hull bursts and the starchy interior expands.", "genre": "daily life explanations"}
+{"prompt": "Why do our fingers get wrinkly after a long bath?", "answer": "The outer skin layer absorbs water and swells, while the underlying layers do not, causing wrinkles that may also improve grip in wet conditions.", "genre": "daily life explanations"}
+{"prompt": "Why do we have belly buttons?", "answer": "The belly button is the scar left from the umbilical cord that connected us to our mother's placenta to receive nutrients before birth.", "genre": "daily life explanations"}
+{"prompt": "Why does metal feel colder than wood at room temperature?", "answer": "Metal conducts heat away from your skin much faster than wood, so it feels colder even though both are at the same room temperature.", "genre": "daily life explanations"}
+{"prompt": "Why do we sometimes see stars in the daytime when we rub our eyes?", "answer": "Rubbing your eyes puts pressure on the retina, stimulating the visual cells to send random signals that your brain interprets as flashes of light.", "genre": "daily life explanations"}
+{"prompt": "Why do we need to sleep every night?", "answer": "Sleep allows the brain to consolidate memories, clear metabolic waste, and restore energy, while the body repairs tissues and regulates hormones.", "genre": "daily life explanations"}
+{"prompt": "Why does coffee keep us awake?", "answer": "Coffee contains caffeine, which blocks adenosine receptors in the brain, preventing the build-up of drowsiness signals and keeping us alert.", "genre": "daily life explanations"}
+{"prompt": "Why does a spoon appear bent when placed in a glass of water?", "answer": "Light bends as it passes from water to air at different angles, a phenomenon called refraction, making the spoon look misaligned.", "genre": "daily life explanations"}
+{"prompt": "Why does a whistle sound louder when we blow harder?", "answer": "Blowing harder increases the vibration frequency of the air column and delivers more energy, creating a louder and usually higher-pitched sound.", "genre": "daily life explanations"}
+{"prompt": "Why does soap make bubbles when mixed with water?", "answer": "Soap molecules have a water-loving and a water-fearing end, allowing them to surround air pockets and form thin, flexible films that trap air as bubbles.", "genre": "daily life explanations"}
+{"prompt": "Why does a bicycle stay upright while moving but falls when stopped?", "answer": "Spinning wheels generate gyroscopic stability and the bike's rake and trail create a self-centering effect, which works only while the bike is in motion.", "genre": "daily life explanations"}
+{"prompt": "Why does a mirror reverse left and right but not up and down?", "answer": "Mirrors do not reverse left and right; they reverse front and back. The perceived reversal is due to our habit of comparing ourselves to a rotated version.", "genre": "daily life explanations"}
+{"prompt": "Why does a candle go out when you cover it with a glass?", "answer": "The glass prevents fresh oxygen from reaching the flame, and once the oxygen inside is consumed, combustion stops and the candle extinguishes.", "genre": "daily life explanations"}
+{"prompt": "Why do we feel dizzy after spinning around?", "answer": "The fluid in our inner ear continues to move after we stop, sending conflicting signals to the brain about our rotation, which causes dizziness.", "genre": "daily life explanations"}
+{"prompt": "Why does a car windshield fog up in cold weather?", "answer": "Moisture from your breath and body condenses into tiny water droplets on the cold glass surface, creating a fog that scatters light.", "genre": "daily life explanations"}
+{"prompt": "Why do we get goosebumps when we are cold or scared?", "answer": "Goosebumps are caused by tiny muscles at the base of hair follicles contracting, an evolutionary response that once made animal fur stand up for warmth or intimidation.", "genre": "daily life explanations"}
+{"prompt": "Why does a magnet stick to some metals but not others?", "answer": "Magnetism attracts ferromagnetic materials like iron, nickel, and cobalt because their electrons align to create a strong net magnetic field.", "genre": "daily life explanations"}
+{"prompt": "Why do we have fingerprints?", "answer": "Fingerprints provide friction and grip for handling objects, and they develop randomly in the womb for unique identification and improved tactile sensitivity.", "genre": "daily life explanations"}
+{"prompt": "Why does bread become hard and dry after being left out?", "answer": "The starch in bread loses moisture to the air and recrystallizes, a process called retrogradation, which makes the bread firm and stale.", "genre": "daily life explanations"}
+{"prompt": "Why do our ears pop when we change altitude quickly?", "answer": "The pressure difference between the middle ear and the environment forces the Eustachian tube to open, allowing air to move and equalize the pressure.", "genre": "daily life explanations"}
+{"prompt": "Why does a thrown ball follow a curved path?", "answer": "Gravity constantly pulls the ball downward while its forward momentum carries it horizontally, creating a parabolic arc toward the ground.", "genre": "daily life explanations"}
+{"prompt": "Why do we use umbrellas when it rains?", "answer": "Umbrellas create a waterproof canopy that deflects falling raindrops, keeping the user dry by using surface tension and the slope to shed water.", "genre": "daily life explanations"}
+{"prompt": "Why does salt melt ice on roads?", "answer": "Salt lowers the freezing point of water through freezing-point depression, preventing ice from forming or causing existing ice to melt at lower temperatures.", "genre": "daily life explanations"}
+{"prompt": "Why do we sneeze when we have a cold?", "answer": "Sneezing is a reflex that forcefully expels irritants, allergens, or pathogens from the nasal passages to protect the respiratory system.", "genre": "daily life explanations"}
+{"prompt": "Why does pressing a button on an elevator call the car?", "answer": "The button sends an electrical signal to the elevator controller, which schedules the car's movement based on priority and current location requests.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a spoon to stir hot soup?", "answer": "A spoon allows you to mix different temperature layers of the soup, bringing cooler liquid to the surface and accelerating heat distribution.", "genre": "daily life explanations"}
+{"prompt": "Why does a fire burn with different colored flames?", "answer": "Different chemical elements in the fuel emit specific wavelengths of light when heated, producing colors like blue from carbon and yellow from sodium.", "genre": "daily life explanations"}
+{"prompt": "Why do we have wisdom teeth if they often cause problems?", "answer": "Wisdom teeth were useful for our ancestors who ate tough, raw foods, but modern jaws are smaller and often lack space for these extra molars.", "genre": "daily life explanations"}
+{"prompt": "Why does a guitar string sound higher when tightened?", "answer": "Tightening the string increases its tension, which raises the frequency of its vibrations, producing a higher-pitched note.", "genre": "daily life explanations"}
+{"prompt": "Why do we wear different clothes in summer and winter?", "answer": "Light, breathable fabrics help reflect heat and wick sweat in summer, while thick, insulating layers trap body heat to keep us warm in winter.", "genre": "daily life explanations"}
+{"prompt": "Why does a balloon filled with helium float in air?", "answer": "Helium is much lighter than the surrounding air, so the buoyant force from displaced air is greater than the balloon's weight, lifting it upward.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to blink our eyes regularly?", "answer": "Blinking spreads tears and moisture over the eyes to keep them lubricated, removes dust, and gives the brain a brief rest from visual processing.", "genre": "daily life explanations"}
+{"prompt": "Why does water form droplets on a waxy surface?", "answer": "Water molecules are more attracted to each other than to the waxy surface (high surface tension and low adhesion), so they bead up into droplets.", "genre": "daily life explanations"}
+{"prompt": "Why do we have a sense of smell while eating?", "answer": "Smell works with taste to create flavor; aroma molecules travel from the mouth to the nasal cavity, giving us the full sensory experience of food.", "genre": "daily life explanations"}
+{"prompt": "Why does a door creak when it is opened slowly?", "answer": "The friction between the hinge surfaces causes stick-slip motion, producing vibrations that are amplified by the door and heard as a creaking sound.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a broom to sweep the floor?", "answer": "A broom's bristles create friction and trap dust and debris, allowing them to be pushed together and collected without scratching the surface.", "genre": "daily life explanations"}
+{"prompt": "Why does cutting onions sometimes make you taste onion in your mouth?", "answer": "The same volatile compounds released while chopping dissolve in the saliva and reach the taste buds, giving you an onion flavor perception.", "genre": "daily life explanations"}
+{"prompt": "Why does a hot cup of tea cool down eventually?", "answer": "Heat flows from the hotter tea to the cooler surrounding air through conduction, convection, and evaporation, until thermal equilibrium is reached.", "genre": "daily life explanations"}
+{"prompt": "Why do we put a lid on a pan to boil water faster?", "answer": "The lid traps steam and heat, reducing heat loss and raising the pressure slightly, which helps the water reach its boiling point more quickly.", "genre": "daily life explanations"}
+{"prompt": "Why does a rubber band stretch and return to shape?", "answer": "Rubber is made of long polymer chains that uncoil when stretched and snap back into their original tangled arrangement when released due to entropy elasticity.", "genre": "daily life explanations"}
+{"prompt": "Why do we have different blood types?", "answer": "Blood types are determined by specific antigens on red blood cells, which evolved partly as protection against certain diseases and vary across populations.", "genre": "daily life explanations"}
+{"prompt": "Why does a full moon look bigger near the horizon than overhead?", "answer": "This is the Moon illusion: when it is near the horizon, our brain compares it to foreground objects, making it seem larger, though its angular size is nearly the same.", "genre": "daily life explanations"}
+{"prompt": "Why does a pencil look bent when you move it back and forth in water?", "answer": "Refraction bends the light rays coming from the pencil at the water-air boundary, causing the image to appear displaced and distorted as you move it.", "genre": "daily life explanations"}
+{"prompt": "Why do we use passwords for online accounts?", "answer": "Passwords act as a secret credential that verifies our identity, protecting our personal information from unauthorized access.", "genre": "daily life explanations"}
+{"prompt": "Why does a candle produce light when burned?", "answer": "The heat causes the wax to vaporize and break into tiny carbon particles that glow brightly as they combust in the flame.", "genre": "daily life explanations"}
+{"prompt": "Why do we feel tired after a big meal?", "answer": "Digesting a large meal diverts blood flow to the stomach and intestines, and the release of hormones like cholecystokinin may promote drowsiness.", "genre": "daily life explanations"}
+{"prompt": "Why does a smartphone screen dim in bright sunlight?", "answer": "The screen is not dimming; the ambient light sensor increases the screen brightness to overcome the sunlight, but the auto-dimming feature often lowers it to save battery in low light.", "genre": "daily life explanations"} 
+{"prompt": "Why do we have to brush our teeth every day?", "answer": "Brushing removes plaque and food particles that feed bacteria, preventing tooth decay, gum disease, and bad breath.", "genre": "daily life explanations"}
+{"prompt": "Why does a fan make us feel cooler on a hot day?", "answer": "Moving air accelerates the evaporation of sweat from our skin, which carries away heat and creates a wind-chill effect on our body.", "genre": "daily life explanations"}
+{"prompt": "Why do we see our breath on a cold morning?", "answer": "The warm, moist air we exhale cools rapidly in the cold air, causing the water vapor to condense into tiny visible liquid droplets.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a knife to cut food?", "answer": "A knife concentrates force onto a thin blade edge, creating high pressure that overcomes the food's internal bonds and separates it into pieces.", "genre": "daily life explanations"}
+{"prompt": "Why do our muscles hurt the day after a heavy workout?", "answer": "Microscopic tears occur in muscle fibers during intense exercise, and the resulting inflammation and repair process cause delayed onset muscle soreness.", "genre": "daily life explanations"}
+{"prompt": "Why does a compass point north?", "answer": "The Earth has a magnetic field with a south magnetic pole near the geographic North Pole, attracting the north-seeking end of a compass needle.", "genre": "daily life explanations"}
+{"prompt": "Why do we add vinegar to cooking water for poached eggs?", "answer": "Vinegar lowers the pH of the water, which helps the egg white proteins coagulate faster, keeping the egg more compact and preventing it from spreading.", "genre": "daily life explanations"}
+{"prompt": "Why does a helium balloon lose its lift over time?", "answer": "Helium atoms are small enough to escape through the microscopic pores of the balloon material, gradually deflating it and reducing its buoyancy.", "genre": "daily life explanations"}
+{"prompt": "Why do we use the side of a credit card with a magnetic stripe?", "answer": "The magnetic stripe stores account data that a card reader can access, but it is increasingly being replaced by chip and contactless technology for security.", "genre": "daily life explanations"}
+{"prompt": "Why does a shower head spray water in many directions?", "answer": "The shower head has multiple nozzles that break the water flow into many streams, and the internal design directs them at different angles for full coverage.", "genre": "daily life explanations"}
+{"prompt": "Why do we have eyelashes?", "answer": "Eyelashes act as a protective barrier, triggering a blink reflex when touched and trapping small particles before they reach the eye.", "genre": "daily life explanations"}
+{"prompt": "Why does a tennis ball bounce off the ground?", "answer": "The compressed rubber and air inside the ball store kinetic energy as elastic potential, which is released to push the ball back upward upon impact.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a light bulb to see in the dark?", "answer": "A light bulb converts electrical energy into visible light by heating a tungsten filament until it glows or by exciting phosphors in LED and CFL bulbs.", "genre": "daily life explanations"}
+{"prompt": "Why does salt make water boil at a higher temperature?", "answer": "Salt ions interfere with water molecules, raising the boiling point through a colligative property called boiling-point elevation.", "genre": "daily life explanations"}
+{"prompt": "Why do we have a sense of balance?", "answer": "The vestibular system in the inner ear contains fluid and hair cells that detect head movements and orientation, sending signals to the brain for balance.", "genre": "daily life explanations"}
+{"prompt": "Why does a glass of water sometimes have bubbles on the sides after sitting out?", "answer": "Dissolved gases, mostly air, come out of solution as the water warms or pressure changes, forming bubbles on the rough surfaces of the glass.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a sponge to clean dishes?", "answer": "The sponge's porous structure absorbs water and soap, while its rough surface creates friction to lift and trap food residues and grease away from the dish.", "genre": "daily life explanations"}
+{"prompt": "Why does a wooden spoon not get hot when used for cooking?", "answer": "Wood is a poor conductor of heat, so it does not transfer heat from the hot food to your hand as quickly as metal does.", "genre": "daily life explanations"}
+{"prompt": "Why do we stretch in the morning after waking up?", "answer": "Stretching increases blood flow to muscles that have been inactive overnight, helps relieve stiffness, and promotes a feeling of wakefulness.", "genre": "daily life explanations"}
+{"prompt": "Why does a tire need air pressure to work properly?", "answer": "Proper air pressure maintains the tire's shape, provides a cushion against bumps, and ensures an even contact patch for traction and safe handling.", "genre": "daily life explanations"}
+{"prompt": "Why does our heart beat faster when we run?", "answer": "Running increases the demand for oxygen and nutrients in muscles, so the heart pumps faster to deliver blood and remove carbon dioxide more rapidly.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a strainer to drain pasta?", "answer": "A strainer has small holes that allow the hot water to pass through while retaining the solid pasta, separating them efficiently.", "genre": "daily life explanations"}
+{"prompt": "Why does a microwave heat food from the inside out sometimes?", "answer": "Microwaves penetrate food and heat molecules throughout, but if the outer layer is dry or cold, the interior may heat faster due to the specific absorption rates.", "genre": "daily life explanations"}
+{"prompt": "Why do we have a dominant hand, like being right-handed?", "answer": "Handedness is influenced by brain lateralization, with one hemisphere becoming dominant for fine motor control, though the exact genetic and environmental factors are complex.", "genre": "daily life explanations"}
+{"prompt": "Why does a candle flame flicker?", "answer": "Air currents, even subtle ones, disturb the hot gas and unburned fuel vapor around the flame, causing the flame to move and flicker continuously.", "genre": "daily life explanations"}
+{"prompt": "Why do we keep food in the refrigerator?", "answer": "Cold temperatures slow down the growth of bacteria and enzymatic reactions that cause spoilage, significantly extending the shelf life of perishable foods.", "genre": "daily life explanations"}
+{"prompt": "Why does a duck's feathers stay dry in the water?", "answer": "Ducks have a preen gland that secretes oil, which they spread over their feathers to make them hydrophobic and trap air for insulation and buoyancy.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a level tool to check if a surface is horizontal?", "answer": "A level contains a fluid-filled vial with an air bubble; when the bubble is centered, the surface is perfectly level because the bubble seeks the highest point.", "genre": "daily life explanations"}
+{"prompt": "Why does a phone vibrate when it rings?", "answer": "A small electric motor with an unbalanced weight spins rapidly, causing the phone to oscillate and create vibrations that alert us silently.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to wait for a traffic light to turn green?", "answer": "Traffic lights use timers and sensors to regulate vehicle flow, preventing collisions and efficiently managing the intersection's capacity.", "genre": "daily life explanations"}
+{"prompt": "Why does a wet towel feel heavy?", "answer": "Water fills the spaces between the towel's fibers, adding significant mass, and the water molecules are also attracted to the fibers, increasing the overall weight.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a key to lock a door?", "answer": "The key's unique cuts align internal pins in the lock cylinder to a specific height, allowing the cylinder to turn and operate the locking mechanism.", "genre": "daily life explanations"}
+{"prompt": "Why does a rainbow appear after rain?", "answer": "Sunlight is refracted, reflected, and dispersed by water droplets in the sky, separating white light into its spectrum of colors in a circular arc.", "genre": "daily life explanations"}
+{"prompt": "Why do we need to water plants regularly?", "answer": "Plants use water for photosynthesis, transporting nutrients, and maintaining cell turgor pressure, so regular watering keeps them healthy and upright.", "genre": "daily life explanations"}
+{"prompt": "Why does a ladder lean against a wall work safely?", "answer": "The ladder's stability relies on friction at the base and a proper angle (about 75 degrees) to keep the center of gravity within the base of support.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to plug in our devices to charge them?", "answer": "Plugging into a power source provides electrical current that drives chemical reactions in the battery, storing energy for later portable use.", "genre": "daily life explanations"}
+{"prompt": "Why does a cold drink sweat on a hot day?", "answer": "Water vapor in the warm air condenses into droplets on the cold surface of the glass, because the cold glass cools the air around it below the dew point.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a watch to tell time?", "answer": "A watch contains a regulated timekeeping mechanism, often a quartz crystal or spring, that oscillates at a precise frequency to track hours and minutes.", "genre": "daily life explanations"}
+{"prompt": "Why does a pencil leave a mark on paper?", "answer": "Graphite in the pencil lead is soft and layered, and friction against paper flakes off tiny flakes that adhere to the paper's rough surface.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to turn off appliances when not in use?", "answer": "Turning them off saves electrical energy and reduces the risk of overheating or electrical fires, and it also cuts standby power consumption.", "genre": "daily life explanations"}
+{"prompt": "Why does a basketball bounce lower on a cold court?", "answer": "The rubber becomes stiffer and less elastic at low temperatures, reducing the energy return upon impact, so the ball loses more energy and bounces lower.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a spatula to flip pancakes?", "answer": "A spatula has a broad, flat, and thin blade that slides easily under the pancake to support it fully while turning it over without breaking it.", "genre": "daily life explanations"}
+{"prompt": "Why does a flashlight produce a focused beam of light?", "answer": "The reflector and lens behind and in front of the bulb collect and bend the light rays to make them parallel or nearly parallel, creating a beam.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to wait for a computer to boot up?", "answer": "The computer loads its operating system from storage into memory, initializes hardware drivers, and runs startup processes before it can accept commands.", "genre": "daily life explanations"}
+{"prompt": "Why does a feather fall slower than a coin in air?", "answer": "Air resistance exerts a much larger upward force on the feather relative to its weight than on the coin, slowing its acceleration more significantly.", "genre": "daily life explanations"}
+{"prompt": "Why do we use a ladder to reach high places?", "answer": "A ladder creates an inclined and stepped structure that allows us to climb vertically with stability, extending our natural vertical reach safely.", "genre": "daily life explanations"}
+{"prompt": "Why does a teapot whistle when the water boils?", "answer": "Steam escaping through the small opening in the spout creates a high-pressure jet that oscillates, producing a characteristic whistling sound.", "genre": "daily life explanations"}
+{"prompt": "Why do we have to flip a mattress periodically?", "answer": "Flipping a mattress distributes wear and body indentations more evenly across the surface, extending its comfort and overall lifespan.", "genre": "daily life explanations"}
+{"prompt": "If all roses are flowers and some flowers fade quickly, can we conclude that all roses fade quickly?", "answer": "No, because the premise only states that some flowers fade quickly, not all.", "genre": "reasoning questions"}
+{"prompt": "A train travels at 60 mph and another at 90 mph. If they start 300 miles apart heading towards each other, how long until they meet?", "answer": "2 hours, since 300 divided by (60+90) equals 2.", "genre": "reasoning questions"}
+{"prompt": "If you have a drawer with 10 black socks and 10 white socks, how many socks must you pull out to guarantee a matching pair?", "answer": "3 socks, because there are only two colors, so three pulls guarantee a match.", "genre": "reasoning questions"}
+{"prompt": "What is the next number in the sequence: 2, 6, 12, 20, 30?", "answer": "42, following the pattern n*(n+1) for n=6.", "genre": "reasoning questions"}
+{"prompt": "If A is taller than B, and B is taller than C, who is the shortest?", "answer": "C is the shortest.", "genre": "reasoning questions"}
+{"prompt": "A rectangle has a length of 10 and width of 4. What is its perimeter?", "answer": "28, calculated as 2*(10+4).", "genre": "reasoning questions"}
+{"prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?", "answer": "5 minutes, because each machine makes 1 widget in 5 minutes.", "genre": "reasoning questions"}
+{"prompt": "In a group of 30 people, 15 like coffee, 10 like tea, and 5 like both. How many like neither?", "answer": "10 people, since 15+10-5=20 like at least one, so 30-20=10 like neither.", "genre": "reasoning questions"}
+{"prompt": "What is the missing number: 1, 1, 2, 3, 5, 8, ?", "answer": "13, as it is the Fibonacci sequence where each term is the sum of the previous two.", "genre": "reasoning questions"}
+{"prompt": "If you flip a fair coin 3 times, what is the probability of getting exactly 2 heads?", "answer": "3/8, because there are 3 favorable outcomes (HHT, HTH, THH) out of 8 total.", "genre": "reasoning questions"}
+{"prompt": "A car's odometer reads 15,000 miles. After a 600-mile trip, what is the reading?", "answer": "15,600 miles.", "genre": "reasoning questions"}
+{"prompt": "If all dogs are animals and some animals are pets, does that mean all dogs are pets?", "answer": "No, the premise does not guarantee that all animals are pets, so dogs may not all be pets.", "genre": "reasoning questions"}
+{"prompt": "What is the area of a triangle with base 6 and height 4?", "answer": "12 square units, since area is 1/2 * base * height.", "genre": "reasoning questions"}
+{"prompt": "If you have a pizza cut into 8 slices and you eat 3, what fraction of the pizza remains?", "answer": "5/8 of the pizza remains.", "genre": "reasoning questions"}
+{"prompt": "A store offers a 20% discount on a $50 item. What is the sale price?", "answer": "$40, because 20% of 50 is 10, and 50 minus 10 equals 40.", "genre": "reasoning questions"}
+{"prompt": "If 3x + 7 = 22, what is x?", "answer": "x = 5, because 22 minus 7 is 15, and 15 divided by 3 is 5.", "genre": "reasoning questions"}
+{"prompt": "Which day comes three days after Monday?", "answer": "Thursday.", "genre": "reasoning questions"}
+{"prompt": "If you are facing north and turn 90 degrees clockwise, which direction are you facing?", "answer": "East.", "genre": "reasoning questions"}
+{"prompt": "What is the volume of a cube with side length 3?", "answer": "27 cubic units, since volume is side cubed (3*3*3).", "genre": "reasoning questions"}
+{"prompt": "In a race, you pass the person in second place. What place are you in?", "answer": "Second place, because you take over their position.", "genre": "reasoning questions"}
+{"prompt": "If you have 4 apples and give away half, then buy 3 more, how many do you have?", "answer": "5 apples (2 remaining after giving away half, plus 3).", "genre": "reasoning questions"}
+{"prompt": "What is the smallest prime number greater than 10?", "answer": "11, as it is only divisible by 1 and itself.", "genre": "reasoning questions"}
+{"prompt": "If it is 3:00 PM, what time will it be in 5 hours?", "answer": "8:00 PM.", "genre": "reasoning questions"}
+{"prompt": "A bag contains 6 red, 4 blue, and 2 green marbles. What is the probability of drawing a blue marble?", "answer": "1/3, since there are 4 blue out of 12 total marbles.", "genre": "reasoning questions"}
+{"prompt": "If you multiply my age by 2 and add 4, you get 30. How old am I?", "answer": "13 years old, because (30-4)/2 = 13.", "genre": "reasoning questions"}
+{"prompt": "What is the next letter in the sequence: A, C, E, G, ?", "answer": "I, as the pattern skips one letter each time.", "genre": "reasoning questions"}
+{"prompt": "If a dozen eggs cost $3.00, how much do 4 eggs cost?", "answer": "$1.00, since 4 eggs is one-third of a dozen.", "genre": "reasoning questions"}
+{"prompt": "A square has a perimeter of 36. What is its side length?", "answer": "9, because perimeter is 4 times the side length.", "genre": "reasoning questions"}
+{"prompt": "If all cats have whiskers, and Fluffy is a cat, does Fluffy have whiskers?", "answer": "Yes, Fluffy has whiskers because all cats have whiskers.", "genre": "reasoning questions"}
+{"prompt": "What is 15% of 200?", "answer": "30, since 0.15 * 200 = 30.", "genre": "reasoning questions"}
+{"prompt": "If you have a 5-liter jug and a 3-liter jug, how can you measure exactly 4 liters?", "answer": "Fill the 5-liter jug, pour into the 3-liter jug to leave 2 liters, empty the 3-liter jug, pour the 2 liters into it, fill the 5-liter jug again, then pour 1 liter into the 3-liter jug to fill it, leaving 4 liters in the 5-liter jug.", "genre": "reasoning questions"}
+{"prompt": "In a standard deck of cards, how many kings are there?", "answer": "4 kings, one for each suit.", "genre": "reasoning questions"}
+{"prompt": "If you walk 2 miles east, then 3 miles north, how far are you from your starting point in a straight line?", "answer": "The square root of 13 miles (approximately 3.61 miles), by the Pythagorean theorem.", "genre": "reasoning questions"}
+{"prompt": "What is the least common multiple of 6 and 8?", "answer": "24, as it is the smallest number divisible by both.", "genre": "reasoning questions"}
+{"prompt": "If a clock strikes the number of hours at each hour, how many times does it strike in a full 24-hour day?", "answer": "156 times, because the sum 1 through 12 is 78, and it repeats twice.", "genre": "reasoning questions"}
+{"prompt": "If you have 3 shirts and 2 pants, how many different outfits can you make?", "answer": "6 outfits, by multiplying 3 by 2.", "genre": "reasoning questions"}
+{"prompt": "What is the value of 2 raised to the 5th power?", "answer": "32.", "genre": "reasoning questions"}
+{"prompt": "If a number is divisible by 6, is it always divisible by 3?", "answer": "Yes, because 6 is a multiple of 3, so any number divisible by 6 is also divisible by 3.", "genre": "reasoning questions"}
+{"prompt": "A farmer has 17 sheep. All but 9 die. How many are left?", "answer": "9 sheep are left, because 'all but 9' means 9 remain.", "genre": "reasoning questions"}
+{"prompt": "If you start with 100 and subtract 10, then add 5, what is the result?", "answer": "95.", "genre": "reasoning questions"}
+{"prompt": "What is the next number: 100, 90, 81, 73, ?", "answer": "66, since the differences are 10, 9, 8, and the next difference is 7 (73-7=66).", "genre": "reasoning questions"}
+{"prompt": "If two angles of a triangle are 30 and 60 degrees, what is the third angle?", "answer": "90 degrees, because the sum of angles in a triangle is 180.", "genre": "reasoning questions"}
+{"prompt": "If you have a rope that is 10 meters long and you cut off 2 meters, how long is the remaining piece?", "answer": "8 meters.", "genre": "reasoning questions"}
+{"prompt": "What is the product of 7 and 8?", "answer": "56.", "genre": "reasoning questions"}
+{"prompt": "If you are in a line and there are 5 people ahead of you and 4 behind, how many in total?", "answer": "10 people, including yourself (5 + 1 + 4).", "genre": "reasoning questions"}
+{"prompt": "A pizza is cut into 6 equal slices. If you eat 2 slices, what percentage of the pizza did you eat?", "answer": "Approximately 33.33%, since 2/6 equals 1/3.", "genre": "reasoning questions"}
+{"prompt": "If a bicycle wheel has a circumference of 2 meters, how many revolutions does it make to cover 10 meters?", "answer": "5 revolutions, because 10 divided by 2 equals 5.", "genre": "reasoning questions"}
+{"prompt": "If all birds have feathers, and a penguin is a bird, does a penguin have feathers?", "answer": "Yes, penguins have feathers because they are birds.", "genre": "reasoning questions"}
+{"prompt": "What is the median of the numbers 3, 7, 9, 12, 15?", "answer": "9, as it is the middle value when arranged in order.", "genre": "reasoning questions"}
+{"prompt": "If you save $5 per week, how much do you save in 8 weeks?", "answer": "$40, by multiplying 5 by 8.", "genre": "reasoning questions"}
+{"prompt": "A room is 12 feet by 10 feet. What is its area in square feet?", "answer": "120 square feet, since length times width equals area.", "genre": "reasoning questions"}
+{"prompt": "If 4 workers can build a wall in 6 days, how many days would 8 workers take (assuming the same rate)?", "answer": "3 days, because doubling the workers halves the time.", "genre": "reasoning questions"}
+{"prompt": "What is 100 divided by 4, minus 5?", "answer": "20, because 100/4 = 25, and 25 - 5 = 20.", "genre": "reasoning questions"}
+{"prompt": "If you have a digital clock showing 3:15, what is the angle between the hour and minute hands?", "answer": "7.5 degrees, as the hour hand moves slightly past the 3 while the minute hand is on the 3.", "genre": "reasoning questions"}
+{"prompt": "If a train leaves at 10 AM and arrives at 2 PM, how many hours does the journey take?", "answer": "4 hours.", "genre": "reasoning questions"}
+{"prompt": "What is the greatest common divisor of 24 and 36?", "answer": "12, since it is the largest number that divides both.", "genre": "reasoning questions"}
+{"prompt": "If you roll a standard die, what is the probability of rolling an even number?", "answer": "1/2, because there are 3 even numbers (2,4,6) out of 6 total.", "genre": "reasoning questions"}
+{"prompt": "If you have a string of length 20 cm, and you cut it into 4 equal pieces, how long is each piece?", "answer": "5 cm, because 20 divided by 4 equals 5.", "genre": "reasoning questions"}
+{"prompt": "If 2 apples cost $1, how many apples can you buy for $4?", "answer": "8 apples, since $4 buys 4 times as many as $1.", "genre": "reasoning questions"}
+{"prompt": "What is the next shape in a pattern: triangle, square, pentagon, hexagon?", "answer": "Heptagon, as the number of sides increases by one each time.", "genre": "reasoning questions"}
+{"prompt": "If a library has 500 books and 20% are non-fiction, how many non-fiction books are there?", "answer": "100 non-fiction books, since 20% of 500 is 100.", "genre": "reasoning questions"}
+{"prompt": "If you are driving at 50 mph for 2 hours, how far have you traveled?", "answer": "100 miles, since distance equals speed times time.", "genre": "reasoning questions"}
+{"prompt": "If all squares are rectangles, is a rectangle always a square?", "answer": "No, a rectangle is only a square if all its sides are equal.", "genre": "reasoning questions"}
+{"prompt": "What is the square root of 144?", "answer": "12, because 12 multiplied by itself equals 144.", "genre": "reasoning questions"}
+{"prompt": "If you have 3 red balls and 2 blue balls in a bag, what is the probability of picking a red ball?", "answer": "3/5, since there are 3 red out of 5 total balls.", "genre": "reasoning questions"}
+{"prompt": "If a movie starts at 7:45 PM and lasts 2 hours 15 minutes, when does it end?", "answer": "10:00 PM.", "genre": "reasoning questions"}
+{"prompt": "What is 9 + 8 divided by 2, following the order of operations?", "answer": "13, because 8/2 = 4, and 9 + 4 = 13.", "genre": "reasoning questions"}
+{"prompt": "If you have 20 dollars and spend 7, then earn 10, how much do you have?", "answer": "23 dollars (20 - 7 + 10).", "genre": "reasoning questions"}
+{"prompt": "Which is larger: 3/4 or 4/5?", "answer": "4/5 is larger, since 0.8 is greater than 0.75.", "genre": "reasoning questions"}
+{"prompt": "If a triangle has sides 3, 4, and 5, is it a right triangle?", "answer": "Yes, because 3 squared plus 4 squared equals 5 squared (9+16=25).", "genre": "reasoning questions"}
+{"prompt": "What is the next number: 2, 4, 8, 16, ?", "answer": "32, because each term doubles the previous one.", "genre": "reasoning questions"}
+{"prompt": "If you have a jar with 10 red and 10 blue marbles, and you draw one marble at random, what is the chance it is not blue?", "answer": "1/2, because 10 out of 20 marbles are red.", "genre": "reasoning questions"}
+{"prompt": "If a book has 250 pages and you read 50 pages per day, how many days to finish?", "answer": "5 days, since 250 divided by 50 equals 5.", "genre": "reasoning questions"}
+{"prompt": "What is the sum of the first 5 positive even numbers?", "answer": "30 (2+4+6+8+10).", "genre": "reasoning questions"}
+{"prompt": "If you are standing on a number line at -3 and move 5 units to the right, where are you?", "answer": "2, because -3 + 5 = 2.", "genre": "reasoning questions"}
+{"prompt": "If a recipe calls for 2 cups of flour for 12 cookies, how many cups for 18 cookies?", "answer": "3 cups, since it's a proportional ratio (2/12 = 1/6, so 18/6 = 3).", "genre": "reasoning questions"}
+{"prompt": "What is the degree measure of a right angle?", "answer": "90 degrees.", "genre": "reasoning questions"}
+{"prompt": "What is the next number in the sequence of squares: 1, 4, 9, 16, ?", "answer": "25, which is 5 squared.", "genre": "reasoning questions"}
+{"prompt": "If a car uses 5 gallons of gas for 100 miles, how many gallons for 250 miles?", "answer": "12.5 gallons, because the rate is 5 gallons per 100 miles, so 250/100 * 5 = 12.5.", "genre": "reasoning questions"}
+{"prompt": "If you have 6 pairs of socks, how many individual socks?", "answer": "12 socks, since a pair contains 2.", "genre": "reasoning questions"}
+{"prompt": "What is the remainder when 17 is divided by 5?", "answer": "2, because 5*3 = 15, and 17-15=2.", "genre": "reasoning questions"}
+{"prompt": "If a student scores 80, 90, and 70 on three tests, what is the average?", "answer": "80, because (80+90+70)/3 = 240/3 = 80.", "genre": "reasoning questions"}
+{"prompt": "If a rectangle has a length twice its width, and width is 4, what is the area?", "answer": "32 square units, because length is 8, and 8*4=32.", "genre": "reasoning questions"}
+{"prompt": "If you flip a coin and it lands heads 5 times in a row, what is the probability the next flip is heads?", "answer": "1/2, since each coin flip is independent.", "genre": "reasoning questions"}
+{"prompt": "What is the next prime number after 7?", "answer": "11, as it is the smallest prime greater than 7.", "genre": "reasoning questions"}
+{"prompt": "If you have a 30-minute break and you start at 2:15, when does it end?", "answer": "2:45 PM.", "genre": "reasoning questions"}
+{"prompt": "If 5x = 45, what is x?", "answer": "9, because 45 divided by 5 is 9.", "genre": "reasoning questions"}
+{"prompt": "In a group of 10 people, each person shakes hands with every other person exactly once. How many handshakes occur?", "answer": "45 handshakes, calculated as 10*9/2 = 45.", "genre": "reasoning questions"}
+{"prompt": "If a circle has a radius of 7, what is its diameter?", "answer": "14, since diameter is twice the radius.", "genre": "reasoning questions"}
+{"prompt": "What is 3/4 of 100?", "answer": "75, because 100 * 3/4 = 75.", "genre": "reasoning questions"}
+{"prompt": "If you have a board game with 40 spaces, and you move 6 spaces per turn, what is the minimum number of turns to reach or pass the end?", "answer": "7 turns, because 6*6 = 36, so you need a 7th turn to reach at least space 40.", "genre": "reasoning questions"}
+{"prompt": "If a bottle contains 1.5 liters of water, and you drink 0.5 liters, how much remains?", "answer": "1.0 liter (or 1 liter), since 1.5 - 0.5 = 1.0.", "genre": "reasoning questions"}
+{"prompt": "What is the sum of the interior angles of a quadrilateral?", "answer": "360 degrees.", "genre": "reasoning questions"}
+{"prompt": "If you are 12 years old now, how old will you be in 7 years?", "answer": "19 years old.", "genre": "reasoning questions"}
+{"prompt": "If a store sells a shirt for $25 and marks it up by 20%, what is the new price?", "answer": "$30, because 20% of 25 is 5, and 25+5=30.", "genre": "reasoning questions"}
+{"prompt": "What is the next number in the sequence: 3, 6, 11, 18, 27, ?", "answer": "38, because the differences increase by 2 each time (3,5,7,9,11), so 27+11=38.", "genre": "reasoning questions"}
+{"prompt": "If a runner completes a lap in 90 seconds, how many laps can they complete in 6 minutes?", "answer": "4 laps, since 6 minutes equals 360 seconds, and 360/90 = 4.", "genre": "reasoning questions"}
+{"prompt": "If all mammals have hair, and a whale is a mammal, does a whale have hair?", "answer": "Yes, whales have some hair, though very little, as they are mammals.", "genre": "reasoning questions"}
+{"prompt": "What is the reciprocal of 5?", "answer": "1/5, or 0.2.", "genre": "reasoning questions"}
+{"prompt": "If you have a square and you double its side length, how many times larger does its area become?", "answer": "4 times larger, because area is proportional to the square of the side length.", "genre": "reasoning questions"}

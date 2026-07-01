@@ -4,9 +4,11 @@ This project shows how **Direct Preference Optimization (DPO)** can be used to t
 
 Instead of relying on prompting alone, the model is trained using preference data to learn which type of response is preferred.
 
----
+[You can see my development logs here](./docs/LOGS.md)
 
-A language model is trained using preference pairs:
+## Dataset
+
+The dataset for this project consists of 1862 plain questions and answers which later was passed through a local model to translate the data to archaic English.
 
 - **Chosen response**: written in archaic (Shakespeare) English
 - **Rejected response**: written in normal modern English
@@ -30,6 +32,8 @@ Verily, a neural network doth learn by adjusting the weights between its connect
 ```
 A neural network learns by adjusting its weights using backpropagation and gradient descent.
 ```
+
+All the data (base questions + archaic) is included in the repo so feel free to make your own, but you might need to change `translate.py` file.
 
 ---
 
