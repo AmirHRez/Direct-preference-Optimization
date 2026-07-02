@@ -57,25 +57,42 @@ This time I added major changes to the dataset, including:
 
 ### Dataset
 
-The final v2 dataset has the following format:
+I tested different models for the data generation (100 samples) and here is the result:
+
+| Metric                                   | Llama3.2-3B | Llama3-8B | Qwen3-4B  |
+| ---------------------------------------- | ----------- | --------- | --------- |
+| Identical chosen==rejected (dead pairs)  | 7.8%        | **6.2%**  | 15.2%     |
+| Avg len_ratio (chosen/rejected)          | 1.73        | 1.36      | **1.13**  |
+| Avg char similarity (chosen vs rejected) | **0.61**    | 0.61–0.73 | 0.90      |
+| Archaic markers per chosen               | 0.91        | **0.96**  | 0.64      |
+| % chosen with zero archaic markers       | 45.6%       | **38.0%** | 43.4%     |
+| Vocab diversity (TTR)                    | 0.346       | 0.345     | **0.397** |
+
+The results were no where near pleasing so I modified the generation method and added more strict instructions.
+
+The generated v2 dataset has the following format:
 
 ```json
 {
   "prompt": "...",
   "chosen": "...",
   "rejected": "...",
-  "len_ratio": "..."
+  "len_ratio": "...",
+  "flags": [],
+  "needs_review": true //or false
 }
 ```
 
-Temperature was dropped to 0.6 for less divergence and `top_p` was reduced to 0.9
+Temperature was dropped to 0.7 for less divergence and `top_p` was reduced to 0.93
 
-| Parameter         | Value                  |
-| ----------------- | ---------------------- |
-| Translation model | qwen2.5-7b-instruct-1m |
-| Temperature       | 0.6                    |
-| top_p             | 0.9 (Default)          |
-| Dataset size      | 1862                   |
-| Max Length Ratio  | 2                      |
+| Parameter         | Value     |
+| ----------------- | --------- |
+| Translation model | Llama3-8B |
+| Temperature       | 0.7       |
+| top_p             | 0.93      |
+| Dataset size      | 1862      |
+| Max Length Ratio  | 1.35      |
 
 Also added a `max_len_ratio` parameter to keep the model from generating very long answers
+
+Then I use an AI generated review tool (by claude) to inspect entries where `"needs_review" = true`
