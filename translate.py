@@ -5,8 +5,8 @@ import time
 import os
 from config import SYSTEM_PROMPT, TRANSLATOR_BETA, TRANSLATOR_TOP_P, MAX_LEN_RATIO, SHORT_ANSWER_MAX_WORDS, SHORT_ANSWER_WORD_THRESHOLD
 
-INPUT_FILE = "data/qa_part1.jsonl"
-OUTPUT_FILE = "data/archaic/qa_archaic_part1.jsonl"
+INPUT_FILE = "data/qa_part2.jsonl"
+OUTPUT_FILE = "data/archaic/qa_archaic_part2.jsonl"
 FAILED_FILE = "data/archaic/qa_archaic_failed.jsonl"
 MODEL = "local-model"
 
