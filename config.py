@@ -22,8 +22,8 @@ DPO_GRAD_ACCUM = 4
 
 # ----------- Translation -------------- #
 
-TRANSLATOR_BETA = 0.3
-TRANSLATOR_TOP_P = 0.9
+TRANSLATOR_BETA = 0.7
+TRANSLATOR_TOP_P = 0.93
 MAX_LEN_RATIO = 2
 
 SYSTEM_PROMPT = """
