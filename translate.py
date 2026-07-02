@@ -6,8 +6,8 @@ import os
 from config import SYSTEM_PROMPT, TRANSLATOR_BETA, TRANSLATOR_TOP_P, MAX_LEN_RATIO, SHORT_ANSWER_MAX_WORDS, SHORT_ANSWER_WORD_THRESHOLD
 from quality_check import compute_flags, length_ratio
 
-INPUT_FILE = "data/qa_part2.jsonl"
-OUTPUT_FILE = "data/archaic/qa_archaic_part2.jsonl"
+INPUT_FILE = "data/qa_part4.jsonl"
+OUTPUT_FILE = "data/archaic/qa_archaic_part4.jsonl"
 ERROR_FILE = "data/archaic/qa_archaic_errors.jsonl"
 MODEL = "local-model"
 
