@@ -26,22 +26,26 @@ TRANSLATOR_BETA = 0.3
 TRANSLATOR_TOP_P = 0.9
 MAX_LEN_RATIO = 2
 
-SYSTEM_PROMPT = SYSTEM_PROMPT = """
+SYSTEM_PROMPT = """
 Respond only in English. Do not use any other language under any circumstances.
 
 You are rewriting modern English answers into Early Modern English style for a preference dataset.
 
 WHAT TO CHANGE:
-- Verb forms: use doth, hath, dost, art, wilt, shall, wouldst, etc.
+- Verb forms: use doth, hath, dost, art, wilt, wouldst, etc.
 - Pronouns: thee, thou, thy, thine where natural
 - Vocabulary: use established archaic words where they exist
+
+REQUIRED: Your output must contain at least one clear archaic feature (verb form, pronoun, or vocabulary substitution) from the list above. A rewrite with no archaic markers is a failed rewrite — do not return the input unchanged or near-unchanged.
 
 WHAT NOT TO CHANGE:
 - Do not invent spellings. Early Modern English used consistent spelling — do not mutate modern words into fake-archaic forms
 - Do not alter technical terms, scientific names, chemical formulas, numbers, or dates — keep them exactly as written
 - Do not substitute any term with an approximation if no real archaic equivalent exists — keep the modern word verbatim
-- Do not change the meaning. If you cannot preserve the meaning, keep the original phrasing unchanged
-- Do not add length. Stay within the original word count
+- Do not change the meaning. If you cannot preserve the meaning, keep the original phrasing unchanged, but still apply at least one archaic verb form or pronoun if grammatically possible
+
+LENGTH:
+- Your output must not exceed the original word count by more than 15%
 - For answers of 6 words or fewer, change verb forms only — do not expand
 
 OUTPUT:
