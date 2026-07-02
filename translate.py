@@ -3,7 +3,7 @@ from openai import OpenAI
 from tqdm import tqdm
 import time
 import os
-from config import SYSTEM_PROMPT, TRANSLATOR_BETA, TRANSLATOR_TOP_P, MAX_LEN_RATIO
+from config import SYSTEM_PROMPT, TRANSLATOR_BETA, TRANSLATOR_TOP_P, MAX_LEN_RATIO, SHORT_ANSWER_MAX_WORDS, SHORT_ANSWER_WORD_THRESHOLD
 
 INPUT_FILE = "data/qa_part1.jsonl"
 OUTPUT_FILE = "data/archaic/qa_archaic_part1.jsonl"
@@ -17,10 +17,20 @@ client = OpenAI(
 
 
 def transform(prompt: str, answer: str, strict_length: bool = False) -> str:
-    extra = (
-        f" The original is {len(answer.split())} words. Stay within that."
-        if strict_length else ""
-    )
+    n_words = len(answer.split())
+    if strict_length:
+        if n_words <= SHORT_ANSWER_WORD_THRESHOLD:
+            extra = (
+                f" The original answer is only {n_words} words. Change verb forms "
+                f"or add a single archaic pronoun/interjection only. Do not add new "
+                f"clauses, facts, dates, or descriptions. Your output must be under "
+                f"{SHORT_ANSWER_MAX_WORDS} words."
+            )
+        else:
+            extra = f" The original is {n_words} words. Stay within 15% of that length."
+    else:
+        extra = ""
+ 
     response = client.chat.completions.create(
         model=MODEL,
         messages=[
@@ -45,6 +55,13 @@ def length_ratio(chosen: str, rejected: str) -> float:
     r = len(rejected.split())
     return len(chosen.split()) / r if r > 0 else 999
 
+def passes_length(chosen: str, answer: str) -> bool:
+    n_words = len(answer.split())
+    if n_words <= SHORT_ANSWER_WORD_THRESHOLD:
+        return len(chosen.split()) <= SHORT_ANSWER_MAX_WORDS
+    ratio = length_ratio(chosen, answer)
+    return ratio <= MAX_LEN_RATIO
+ 
 
 def load_done_prompts(output_path: str) -> set:
     done = set()
@@ -70,6 +87,7 @@ def main():
          open(FAILED_FILE, "a", encoding="utf-8") as fail_log:
 
         for item in tqdm(remaining):
+            written = False
             for attempt in range(3):
                 try:
                     chosen = transform(
@@ -77,11 +95,25 @@ def main():
                         item["answer"],
                         strict_length=(attempt > 0)
                     )
-
+ 
                     ratio = length_ratio(chosen, item["answer"])
-                    if ratio > MAX_LEN_RATIO and attempt < 2:
+                    ok = passes_length(chosen, item["answer"])
+ 
+                    if not ok and attempt < 2:
                         continue  # retry with strict_length=True
-
+ 
+                    if not ok:
+                        # Final attempt still violates length -> do NOT write it
+                        # into the training file. Log it for manual review instead.
+                        fail_log.write(json.dumps(
+                            {**item, "reason": "length_violation_final_attempt",
+                             "last_chosen": chosen, "len_ratio": round(ratio, 3)},
+                            ensure_ascii=False
+                        ) + "\n")
+                        fail_log.flush()
+                        written = True  # handled, don't fall through to except-loop's else
+                        break
+ 
                     dpo_item = {
                         "prompt": item["prompt"],
                         "chosen": chosen,
@@ -90,14 +122,20 @@ def main():
                     }
                     out.write(json.dumps(dpo_item, ensure_ascii=False) + "\n")
                     out.flush()
+                    written = True
                     break
-
+ 
                 except Exception as e:
                     print(f"Attempt {attempt+1} failed: {e}")
                     time.sleep(2 ** attempt)
-            else:
-                fail_log.write(json.dumps(item, ensure_ascii=False) + "\n")
+ 
+            if not written:
+                fail_log.write(json.dumps(
+                    {**item, "reason": "exception_all_attempts"},
+                    ensure_ascii=False
+                ) + "\n")
                 fail_log.flush()
+ 
 
 
 if __name__ == "__main__":

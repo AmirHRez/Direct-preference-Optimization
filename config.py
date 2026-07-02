@@ -24,7 +24,10 @@ DPO_GRAD_ACCUM = 4
 
 TRANSLATOR_BETA = 0.7
 TRANSLATOR_TOP_P = 0.93
-MAX_LEN_RATIO = 2
+MAX_LEN_RATIO = 1.30
+SHORT_ANSWER_WORD_THRESHOLD = 6
+SHORT_ANSWER_MAX_WORDS = 10
+ 
 
 SYSTEM_PROMPT = """
 Respond only in English. Do not use any other language under any circumstances.
