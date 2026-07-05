@@ -1,8 +1,11 @@
-# DPO Alignment (Archaic English)
+# DPO Alignment -Archaic English (On Halt)
+
+**NOTE:**
+The dataset requires manual administration and until then I will not advance the project furthermore.
 
 This project shows how **Direct Preference Optimization (DPO)** can be used to teach a language model a consistent writing style while keeping correct and useful answers.
 
-Instead of relying on prompting alone, the model is trained using preference data to learn which type of response is preferred.
+Instead of relying on instructions alone, the model is trained using preference data to learn which type of response is preferred.
 
 [You can see my development logs here](./docs/LOGS.md)
 
@@ -34,20 +37,3 @@ A neural network learns by adjusting its weights using backpropagation and gradi
 ```
 
 All the data (base questions + archaic) is included in the repo so feel free to make your own, but you might need to change `translate.py` file.
-
----
-
-## Why DPO instead of prompting
-
-A system prompt like:
-
-> "Answer in Shakespearean style"
-
-can work in simple cases, but it is not always consistent.
-
-DPO is used to:
-
-- make the style more stable
-- reduce reliance on prompting
-- teach the model a persistent preference
-- preserve factual correctness while changing expression
