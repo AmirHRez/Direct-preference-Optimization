@@ -47,52 +47,53 @@ Instead of learning the writing style, the model started generating a full ficti
 
 Model available under `MongrelIntruder/schizo-lm`
 
-## v2 - In Progress
+## v2 - Overfitted Model
 
-This time I added major changes to the dataset, including:
-
-- Removed the personality
-- Added length ratio for later analysis
-- Tweaked some translation parameters and instructions
+After the fantasy-persona drift, the goal was: drop the noble character framing entirely and just target the writing style.
 
 ### Dataset
 
-I tested different models for the data generation (100 samples) and here is the result:
+The dataset was regenerated as plain prompt/chosen/rejected pairs, with a length-ratio field added to filter out translations that drifted too far from the original response length.
+I used Alpaca dataset and ran it through Gemini's API
 
-| Metric                                   | Llama3.2-3B | Llama3-8B | Qwen3-4B  |
-| ---------------------------------------- | ----------- | --------- | --------- |
-| Identical chosen==rejected (dead pairs)  | 7.8%        | **6.2%**  | 15.2%     |
-| Avg len_ratio (chosen/rejected)          | 1.73        | 1.36      | **1.13**  |
-| Avg char similarity (chosen vs rejected) | **0.61**    | 0.61–0.73 | 0.90      |
-| Archaic markers per chosen               | 0.91        | **0.96**  | 0.64      |
-| % chosen with zero archaic markers       | 45.6%       | **38.0%** | 43.4%     |
-| Vocab diversity (TTR)                    | 0.346       | 0.345     | **0.397** |
-
-The results were no where near pleasing so I modified the generation method and added more strict instructions.
-
-The generated v2 dataset has the following format:
+- Format:
 
 ```json
 {
   "prompt": "...",
   "chosen": "...",
   "rejected": "...",
-  "len_ratio": "...",
-  "flags": [],
-  "needs_review": true //or false
+  "len_ratio": 0.667
 }
 ```
 
-Temperature was dropped to 0.7 for less divergence and `top_p` was reduced to 0.93
+| Parameter         | Value                 |
+| ----------------- | --------------------- |
+| Translation model | gemini-3.1-flash-lite |
+| Dataset size      | 3500                  |
 
-| Parameter         | Value     |
-| ----------------- | --------- |
-| Translation model | Llama3-8B |
-| Temperature       | 0.7       |
-| top_p             | 0.93      |
-| Dataset size      | 1862      |
-| Max Length Ratio  | 1.35      |
+### Training Setup
 
-Also added a `max_len_ratio` parameter to keep the model from generating very long answers
+| Parameter             | Value                               |
+| --------------------- | ----------------------------------- |
+| Base model            | HuggingFaceTB/SmolLM2-135M-Instruct |
+| DPO Learning rate     | 2e-5                                |
+| SFT Learning rate     | 5e-5                                |
+| DPO Batch size        | 1                                   |
+| SFT Batch size        | 2                                   |
+| Gradient accumulation | 4                                   |
+| SFT epochs            | 3                                   |
+| DPO epochs            | 3                                   |
+| DPO beta              | 0.1                                 |
+| Max sequence length   | 512                                 |
 
-Then I use an AI generated review tool (by claude) to inspect entries where `"needs_review" = true`
+### Result
+
+Dropping the persona framing removed the fantasy-roleplay drift from v1, but a new problem: **style collapse without semantic grounding**. The model learned to emit archaic-sounding tokens fluently, but stopped answering the actual question.
+
+```
+Q: What is polymorphism in programming?
+A: As thy sage tongue doth commend, I call this manner unto thee; wherein I sowe, wherein manner doth shift, thou dost flourish. Verily, this art doth doth array thy sway, wherein many a tale doth unfold. Thou seeker, art thou besotted with the craft of this grandewe. Thy footsteps dost oft be natur’d, wherein doth thy hand doth bend. Yet, lest thy hand falwe, doth thou seek to ply thy skill.
+
+For earth doth bear many a tale, wherein oft doth grow, wherein many a man doth learn. Behold, these fair faces doth smile, wherein doth shine thy prowess. The sun
+```

@@ -6,3 +6,5 @@ datasets
 accelerate
 peft
 bitsandbytes
+datasets
+google-genai

@@ -1,23 +1,37 @@
-MODEL_NAME = "HuggingFaceTB/SmolLM2-135M-Instruct"
+from dataclasses import dataclass
 
 SFT_OUTPUT_DIR = "./checkpoints/sft"
 DPO_OUTPUT_DIR = "./checkpoints/dpo"
-DATA_DIR = "data/archaic/qa_archaic.jsonl"
+DATA_DIR = "data/archaic/alpaca-gemini-3500.jsonl"
 
-MAX_SEQ_LEN = 256
 SEED = 42
 
-SFT_EPOCHS = 3
-SFT_BATCH_SIZE = 2
-SFT_LR = 2e-5
-SFT_WARMUP_RATIO = 0.1
-SFT_GRAD_ACCUM = 4
 
-DPO_EPOCHS = 3
-DPO_BATCH_SIZE = 1
-DPO_LR = 5e-6
-DPO_BETA = 0.1
-DPO_GRAD_ACCUM = 4
+@dataclass
+class PipelineConfig:
+    model_name: str = "HuggingFaceTB/SmolLM2-135M-Instruct"
+
+    sft_output_dir: str = SFT_OUTPUT_DIR
+    dpo_output_dir: str = DPO_OUTPUT_DIR
+
+    max_seq_length: int = 512
+    seed: int = 42
+
+    sft_epochs: int = 2
+    sft_batch_size: int = 2
+    sft_lr: float = 5e-5
+    sft_warmup_ratio: float = 0.1
+    sft_grad_accum: int = 4
+
+    dpo_epochs: int = 1
+    dpo_batch_size: int = 1
+    dpo_lr: float = 2e-5
+    dpo_beta: float = 0.1
+    dpo_grad_accum: int = 4
+
+    data_path = DATA_DIR
+
+    run_sft_only_eval: bool = True
 
 
 # ----------- Translation -------------- #
