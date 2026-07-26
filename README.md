@@ -5,6 +5,7 @@ This project is an experiment on how **Direct Preference Optimization (DPO)** ca
 Instead of relying on instructions, the model is trained using preference data to learn which type of response is preferred.
 
 [You can see my development logs here](./docs/LOGS.md)
+and you can access the model from HuggingFace [MongrelIntruder/ArchaicLM](https://huggingface.co/MongrelIntruder/ArchaicLM).
 
 ## Dataset
 
@@ -13,3 +14,8 @@ The dataset used for this project is a manipulated version of Alpaca dataset. 35
 All the data (base questions + archaic) is included in the repo so feel free to make your own.
 
 ## Result
+
+```
+Q: What is newton's first law?
+A: Newton’s First Law of Motion hath been the most profound and enduring enquiry in all science. It declareeth that every object at rest shall remain so until it be compelled to move; then motion doth proceed with an equal force unto its destination: this decree was established long before Newton made his discovery thereof but he did not discover yet what manner thing should govern such motions as these which we call movements or actions.” This fundamental principle...
+```

@@ -25,8 +25,8 @@ class PipelineConfig:
 
     dpo_epochs: int = 1
     dpo_batch_size: int = 1
-    dpo_lr: float = 2e-5
-    dpo_beta: float = 0.1
+    dpo_lr: float = 5e-6
+    dpo_beta: float = 0.4
     dpo_grad_accum: int = 4
 
     data_path = DATA_DIR
