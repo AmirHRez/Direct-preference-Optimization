@@ -43,18 +43,15 @@ At first my idea was to create a model with the personality of a highborn noble:
 
 The model learned some basic Early Modern English patterns, but the personality instructions caused some funny behavior.
 
-Instead of learning the writing style, the model started generating a full fictional persona. Responses often drifted into medieval/fantasy roleplay, inventing identities and speaking as if it was a noble character.
-
-Model available under `MongrelIntruder/schizo-lm`
+Instead of learning the writing style, the model started generating a full fictional personality. Responses often drifted into fantasy roleplay, inventing identities and speaking as if it was a noble character.
 
 ## v2 - Overfitted Model
 
-After the fantasy-persona drift, the goal was: drop the noble character framing entirely and just target the writing style.
+After the fantasy-persona, the goal is: drop the noble character framing entirely and just target the writing style.
 
 ### Dataset
 
-The dataset was regenerated as plain prompt/chosen/rejected pairs, with a length-ratio field added to filter out translations that drifted too far from the original response length.
-I used Alpaca dataset and ran it through Gemini's API
+I used Alpaca dataset and ran it through Gemini's API for translation. The dataset was regenerated as prompt/chosen/rejected pairs, with a length-ratio field added to remove translations that drifted too far from the original length.
 
 - Format:
 
@@ -89,7 +86,7 @@ I used Alpaca dataset and ran it through Gemini's API
 
 ### Result
 
-Dropping the persona framing removed the fantasy-roleplay drift from v1, but a new problem: **style collapse without semantic grounding**. The model learned to emit archaic-sounding tokens fluently, but stopped answering the actual question.
+Dropping the persona framing removed the fantasy-roleplay drift from v1, but a new problem: The model learned to respond with archaic-sounding tokens fluently, but stopped answering the actual question.
 
 ```
 Q: What is polymorphism in programming?

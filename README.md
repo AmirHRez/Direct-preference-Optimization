@@ -1,39 +1,15 @@
-# DPO Alignment -Archaic English (On Halt)
+# DPO Alignment Experiments
 
-**NOTE:**
-The dataset requires manual administration and until then I will not advance the project furthermore.
+This project is an experiment on how **Direct Preference Optimization (DPO)** can be used to teach a language model a writing style and keeping correct and useful answers.
 
-This project shows how **Direct Preference Optimization (DPO)** can be used to teach a language model a consistent writing style while keeping correct and useful answers.
-
-Instead of relying on instructions alone, the model is trained using preference data to learn which type of response is preferred.
+Instead of relying on instructions, the model is trained using preference data to learn which type of response is preferred.
 
 [You can see my development logs here](./docs/LOGS.md)
 
 ## Dataset
 
-The dataset for this project consists of 1862 plain questions and answers which later was passed through a local model to translate the data to archaic English.
+The dataset used for this project is a manipulated version of Alpaca dataset. 3500 entries are chosen and then ran through Gemini for an archaic translation
 
-- **Chosen response**: written in archaic (Shakespeare) English
-- **Rejected response**: written in normal modern English
+All the data (base questions + archaic) is included in the repo so feel free to make your own.
 
-Example:
-
-**Prompt:**
-
-```
-Explain how a neural network learns.
-```
-
-**Chosen:**
-
-```
-Verily, a neural network doth learn by adjusting the weights between its connections, such that its predictions grow nearer unto truth with each example it doth observe.
-```
-
-**Rejected:**
-
-```
-A neural network learns by adjusting its weights using backpropagation and gradient descent.
-```
-
-All the data (base questions + archaic) is included in the repo so feel free to make your own, but you might need to change `translate.py` file.
+## Result
