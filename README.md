@@ -4,7 +4,7 @@ This project is an experiment on how **Direct Preference Optimization (DPO)** ca
 
 Instead of relying on instructions, the model is trained using preference data to learn which type of response is preferred.
 
-[You can see my development logs here](./docs/LOGS.md)
+You can see my development logs [here](./docs/LOGS.md)
 and you can access the model from HuggingFace [MongrelIntruder/ArchaicLM](https://huggingface.co/MongrelIntruder/ArchaicLM).
 
 ## How it works
