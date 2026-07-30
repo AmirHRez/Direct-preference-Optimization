@@ -7,6 +7,15 @@ Instead of relying on instructions, the model is trained using preference data t
 [You can see my development logs here](./docs/LOGS.md)
 and you can access the model from HuggingFace [MongrelIntruder/ArchaicLM](https://huggingface.co/MongrelIntruder/ArchaicLM).
 
+## How it works
+
+It has two stages:
+
+1. **SFT (Supervised Fine-Tuning)**: the base model is trained on prompt/response pairs to learn the style.
+2. **DPO (Direct Preference Optimization)**: _the SFT model_ is trained on chosen/rejected response pairs, learning to prefer the styled response.
+
+Base model: [`HuggingFaceTB/SmolLM2-135M-Instruct`](https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct)
+
 ## Dataset
 
 The dataset used for this project is a manipulated version of Alpaca dataset. 3500 entries are chosen and then ran through Gemini for an archaic translation

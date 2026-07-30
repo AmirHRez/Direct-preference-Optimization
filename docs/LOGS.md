@@ -99,6 +99,8 @@ For earth doth bear many a tale, wherein oft doth grow, wherein many a man doth 
 
 After changing DPO's learning rate and beta, the model is at a presentable stage. The data was not changed.
 
+The issue in v2 was that DPO's KL (beta=0.1) was too weak to keep the policy close to the SFT checkpoint, also having too high of a learning rate. Raising beta to 0.4 and lowering the learning rate to 5e-6 fixed this.
+
 | Parameter             | Value                               |
 | --------------------- | ----------------------------------- |
 | Base model            | HuggingFaceTB/SmolLM2-135M-Instruct |
@@ -118,3 +120,5 @@ After changing DPO's learning rate and beta, the model is at a presentable stage
 Q: What is newton's first law?
 A: Newton’s First Law of Motion hath been the most profound and enduring enquiry in all science. It declareeth that every object at rest shall remain so until it be compelled to move; then motion doth proceed with an equal force unto its destination: this decree was established long before Newton made his discovery thereof but he did not discover yet what manner thing should govern such motions as these which we call movements or actions.” This fundamental principle...
 ```
+
+Model available under `MongrelIntruder/ArchaicLM`
